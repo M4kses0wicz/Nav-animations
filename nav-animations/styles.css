@@ -1,0 +1,514 @@
+/* CODE FROM GITHUB
+AUTHOR : M4kses0wicz */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(65deg, #ffdee9 0%, #b5fffc 100%);
+}
+
+header {
+  line-height: 100px;
+}
+nav {
+  font-family: "Righteous";
+  margin-top: 20px;
+}
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 25px;
+}
+li {
+  width: 300px;
+  height: 100px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* ANIMATION ONE */
+
+.one {
+  transition: 0.65s;
+}
+.one::after {
+  position: relative;
+  top: -40px;
+  content: "";
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 5px;
+  width: 0%;
+  height: 0px;
+  background: goldenrod;
+  transition: 0.35s;
+}
+
+.one:hover::after {
+  top: -4px;
+  width: 100%;
+  height: 4px;
+  transition: 0.7s;
+}
+
+/* ANIMATION ONE */
+
+/* ANIMATION TWO */
+
+.two {
+  transition: 0.65s;
+}
+.two::after {
+  position: relative;
+  top: -40px;
+  content: "";
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 5px;
+  width: 0%;
+  height: 0px;
+  background: goldenrod;
+  transition: 0.35s;
+}
+
+.two:hover::after {
+  top: -4px;
+  width: 100%;
+  height: 4px;
+  transition: 0.7s;
+}
+
+.two::before {
+  position: relative;
+  top: 40px;
+  content: "";
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 5px;
+  width: 0%;
+  height: 0px;
+  background: goldenrod;
+  transition: 0.35s;
+}
+
+.two:hover::before {
+  top: 4px;
+  width: 100%;
+  height: 4px;
+  transition: 0.7s;
+}
+
+/* ANIMATION TWO */
+
+/* ANIMATION THREE */
+
+.three {
+  transition: 0.65s;
+}
+.three::after {
+  position: relative;
+  top: -40px;
+  content: "";
+  display: block;
+  margin-right: auto;
+  border-radius: 5px;
+  width: 0%;
+  height: 0px;
+  background: goldenrod;
+  transition: 0.35s;
+}
+
+.three:hover::after {
+  top: -4px;
+  width: 100%;
+  height: 4px;
+  transition: 0.7s;
+}
+
+/* ANIMATION THREE */
+
+/* ANIMATION FOUR */
+
+.four {
+  transition: 0.65s;
+}
+.four::after {
+  position: relative;
+  top: -40px;
+  content: "";
+  display: block;
+  margin-right: auto;
+  border-radius: 5px;
+  width: 0%;
+  height: 0px;
+  background: goldenrod;
+  transition: 0.35s;
+}
+
+.four:hover::after {
+  top: -4px;
+  width: 100%;
+  height: 4px;
+  transition: 0.7s;
+}
+
+.four::before {
+  position: relative;
+  top: 40px;
+  content: "";
+  display: block;
+  margin-right: auto;
+  border-radius: 5px;
+  width: 0%;
+  height: 0px;
+  background: goldenrod;
+  transition: 0.35s;
+}
+
+.four:hover::before {
+  top: 4px;
+  width: 100%;
+  height: 4px;
+  transition: 0.7s;
+}
+
+/* ANIMATION FOUR */
+
+/* ANIMATION FIVE */
+
+.five {
+  transition: 0.65s;
+}
+.five::after {
+  position: relative;
+  top: -40px;
+  content: "";
+  display: block;
+  margin-left: auto;
+  border-radius: 5px;
+  width: 0%;
+  height: 0px;
+  background: goldenrod;
+  transition: 0.35s;
+}
+
+.five:hover::after {
+  top: -4px;
+  width: 100%;
+  height: 4px;
+  transition: 0.7s;
+}
+
+/* ANIMATION FIVE */
+
+/* ANIMATION SIX */
+
+.six {
+  transition: 0.65s;
+}
+.six::after {
+  position: relative;
+  top: -40px;
+  content: "";
+  display: block;
+  margin-left: auto;
+  border-radius: 5px;
+  width: 0%;
+  height: 0px;
+  background: goldenrod;
+  transition: 0.35s;
+}
+
+.six:hover::after {
+  top: -4px;
+  width: 100%;
+  height: 4px;
+  transition: 0.7s;
+}
+
+.six::before {
+  position: relative;
+  top: 40px;
+  content: "";
+  display: block;
+  margin-left: auto;
+  border-radius: 5px;
+  width: 0%;
+  height: 0px;
+  background: goldenrod;
+  transition: 0.35s;
+}
+
+.six:hover::before {
+  top: 4px;
+  width: 100%;
+  height: 4px;
+  transition: 0.7s;
+}
+
+/* ANIMATION SIX */
+
+/* ANIMATION SEVEN */
+
+.seven {
+  transition: 0.65s;
+}
+.seven::after {
+  position: relative;
+  top: -40px;
+  content: "";
+  display: block;
+  margin-left: auto;
+  border-radius: 5px;
+  width: 0%;
+  height: 0px;
+  background: goldenrod;
+  transition: 0.35s;
+}
+
+.seven:hover::after {
+  top: -4px;
+  width: 100%;
+  height: 4px;
+  transition: 0.7s;
+}
+
+.seven::before {
+  position: relative;
+  top: 40px;
+  content: "";
+  display: block;
+  margin-right: auto;
+  border-radius: 5px;
+  width: 0%;
+  height: 0px;
+  background: goldenrod;
+  transition: 0.35s;
+}
+
+.seven:hover::before {
+  top: 4px;
+  width: 100%;
+  height: 4px;
+  transition: 0.7s;
+}
+
+/* ANIMATION SEVEN */
+
+/* ANIMATION EIGHT */
+
+.eight {
+  transition: 0.65s;
+}
+.eight::after {
+  position: relative;
+  top: -40px;
+  content: "";
+  display: block;
+  margin-right: auto;
+  border-radius: 5px;
+  width: 0%;
+  height: 0px;
+  background: goldenrod;
+  transition: 0.35s;
+}
+
+.eight:hover::after {
+  top: -4px;
+  width: 100%;
+  height: 4px;
+  transition: 0.7s;
+}
+
+.eight::before {
+  position: relative;
+  top: 40px;
+  content: "";
+  display: block;
+  margin-left: auto;
+  border-radius: 5px;
+  width: 0%;
+  height: 0px;
+  background: goldenrod;
+  transition: 0.35s;
+}
+
+.eight:hover::before {
+  top: 4px;
+  width: 100%;
+  height: 4px;
+  transition: 0.7s;
+}
+
+/* ANIMATION EIGHT */
+
+/* ANIMATION NINE */
+
+.nine {
+  transition: 0.65s;
+}
+
+.nine:hover {
+  letter-spacing: 5px;
+}
+
+/* ANIMATION NINE */
+
+/* ANIMATION TEN */
+
+.ten {
+  transition: 0.65s;
+  position: relative;
+  top: 0;
+  right: 0;
+}
+.ten:hover {
+  top: 6;
+  right: 6px;
+  text-shadow: 6px 6px 4px rgb(60, 60, 60);
+}
+
+/* ANIMATION TEN */
+
+/* ANIMATION ELEVEN */
+
+.eleven {
+  transition: 0.65s;
+  position: relative;
+  top: 0;
+  right: 0;
+}
+.eleven:hover {
+  top: -6;
+  right: -6px;
+  text-shadow: -6px 6px 4px rgb(60, 60, 60);
+}
+
+/* ANIMATION ELEVEN */
+
+/* ANIMATION TWELVE */
+
+.twelve {
+  transition: 0.65s;
+}
+.twelve:hover {
+  letter-spacing: 5px;
+  text-shadow: 4px 4px 4px rgb(60, 60, 60);
+}
+
+/* ANIMATION TWELVE */
+
+/* REST OF CODE */
+
+section {
+  margin: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.anim-border1 {
+  width: 95vw;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.535);
+  border-radius: 25px;
+  border: 1px solid rgba(128, 128, 128, 0.38);
+}
+.anim-border1 > div {
+  height: 8px;
+  width: 150px;
+  border-radius: 25px;
+  position: absolute;
+  right: 0;
+  left: calc(97.5vw - 150px);
+}
+.line1 {
+  background-color: rgba(255, 0, 0);
+  animation: line-anim 7s 0s infinite ease-in-out;
+}
+.line2 {
+  background-color: rgba(255, 166, 0);
+  animation: line-anim 7s 0.1s infinite ease-in-out;
+}
+.line3 {
+  background-color: rgba(255, 255, 0);
+  animation: line-anim 7s 0.2s infinite ease-in-out;
+}
+.line4 {
+  background-color: rgb(0, 255, 0);
+  animation: line-anim 7s 0.3s infinite ease-in-out;
+}
+.line5 {
+  background-color: rgb(0, 200, 0);
+  animation: line-anim 7s 0.4s infinite ease-in-out;
+}
+.line6 {
+  background-color: rgba(0, 128, 0);
+  animation: line-anim 7s 0.5s infinite ease-in-out;
+}
+
+.anim-border2 {
+  width: 95vw;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.535);
+  border-radius: 25px;
+  border: 1px solid rgba(128, 128, 128, 0.38);
+}
+.anim-border2 > div {
+  height: 8px;
+  width: 150px;
+  border-radius: 25px;
+  position: absolute;
+  right: 0;
+  left: calc(97.5vw - 150px);
+}
+.line1-2 {
+  background-color: rgb(0, 160, 60);
+  animation: line-anim 7s 0.8s infinite ease-in-out;
+}
+.line2-2 {
+  background-color: rgb(0, 123, 45);
+  animation: line-anim 7s 0.9s infinite ease-in-out;
+}
+.line3-2 {
+  background-color: rgb(0, 21, 255);
+  animation: line-anim 7s 1s infinite ease-in-out;
+}
+.line4-2 {
+  background-color: rgb(9, 0, 135);
+  animation: line-anim 7s 1.1s infinite ease-in-out;
+}
+.line5-2 {
+  background-color: rgb(120, 0, 120);
+  animation: line-anim 7s 1.2s infinite ease-in-out;
+}
+.line6-2 {
+  background-color: rgb(0, 0, 0);
+  animation: line-anim 7s 1.3s infinite ease-in-out;
+}
+
+@keyframes line-anim {
+  0% {
+    right: 0;
+    left: calc(97.5vw - 150px);
+  }
+  50% {
+    right: 0;
+    left: calc(2.5vw - 0px);
+  }
+  100% {
+    right: 0;
+    left: calc(97.5vw - 150px);
+  }
+}
