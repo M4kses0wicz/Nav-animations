@@ -24,6 +24,31 @@ ul {
   justify-content: space-around;
   font-size: 25px;
 }
+
+@media (max-width: 1850px) {
+  ul {
+    font-size: 15px;
+  }
+}
+@media (max-width: 1220px) {
+  ul {
+    font-size: 10px;
+  }
+}
+@media (max-width: 1000px) {
+  ul {
+    font-size: 7px;
+  }
+}
+@media (max-width: 880px) {
+  ul {
+    font-size: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 li {
   width: 300px;
   height: 100px;
@@ -410,7 +435,16 @@ a {
 
 /* ANIMATION TWELVE */
 
-/* REST OF CODE */
+/* ANIMATION THIRTEEN */
+
+span {
+  padding: 0;
+  margin: 0;
+}
+
+/* ANIMATION THIRTEEN */
+
+/* ANIMATED COLORFULL BORDERS */
 
 section {
   margin: 5vh;
@@ -512,3 +546,5 @@ section {
     left: calc(97.5vw - 150px);
   }
 }
+
+/* ANIMATED COLORFULL BORDERS */
