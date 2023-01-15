@@ -42,7 +42,7 @@ ul {
 }
 @media (max-width: 880px) {
   ul {
-    font-size: 15px;
+    font-size: 25px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -438,11 +438,455 @@ a {
 /* ANIMATION THIRTEEN */
 
 span {
-  padding: 0;
-  margin: 0;
+  margin-left: -6px;
+  position: relative;
+  top: 0;
+}
+#space {
+  color: #00000000;
+}
+.thirteen:hover span:nth-child(1) {
+  animation: jump-one 0.5s 0s;
+}
+.thirteen:hover span:nth-child(2) {
+  animation: jump-one 0.5s 0.05s;
+}
+.thirteen:hover span:nth-child(3) {
+  animation: jump-one 0.5s 0.1s;
+}
+.thirteen:hover span:nth-child(4) {
+  animation: jump-one 0.5s 0.15s;
+}
+.thirteen:hover span:nth-child(5) {
+  animation: jump-one 0.5s 0.2s;
+}
+.thirteen:hover span:nth-child(6) {
+  animation: jump-one 0.5s 0.25s;
+}
+.thirteen:hover span:nth-child(7) {
+  animation: jump-one 0.5s 0.3s;
+}
+.thirteen:hover span:nth-child(8) {
+  animation: jump-one 0.5s 0.35s;
+}
+.thirteen:hover span:nth-child(9) {
+  animation: jump-one 0.5s 0.4s;
+}
+.thirteen:hover span:nth-child(11) {
+  animation: jump-one 0.5s 0.45s;
+}
+.thirteen:hover span:nth-child(12) {
+  animation: jump-one 0.5s 0.5s;
+}
+.thirteen:hover span:nth-child(13) {
+  animation: jump-one 0.5s 0.55s;
+}
+.thirteen:hover span:nth-child(14) {
+  animation: jump-one 0.5s 0.6s;
+}
+.thirteen:hover span:nth-child(15) {
+  animation: jump-one 0.5s 0.65s;
+}
+.thirteen:hover span:nth-child(16) {
+  animation: jump-one 0.5s 0.7s;
+}
+.thirteen:hover span:nth-child(17) {
+  animation: jump-one 0.5s 0.75s;
+}
+.thirteen:hover span:nth-child(18) {
+  animation: jump-one 0.5s 0.8s;
+}
+
+@keyframes jump-one {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: -10px;
+  }
+  100% {
+    top: 0px;
+  }
 }
 
 /* ANIMATION THIRTEEN */
+
+/* ANIMATION FOURTEEN */
+
+span {
+  margin-left: -7px;
+  position: relative;
+  top: 0;
+}
+#space {
+  color: #00000000;
+}
+.fourteen:hover span:nth-child(1) {
+  animation: jump-one 0.5s 0.8s;
+}
+.fourteen:hover span:nth-child(2) {
+  animation: jump-one 0.5s 0.75s;
+}
+.fourteen:hover span:nth-child(3) {
+  animation: jump-one 0.5s 0.7s;
+}
+.fourteen:hover span:nth-child(4) {
+  animation: jump-one 0.5s 0.65s;
+}
+.fourteen:hover span:nth-child(5) {
+  animation: jump-one 0.5s 0.6s;
+}
+.fourteen:hover span:nth-child(6) {
+  animation: jump-one 0.5s 0.55s;
+}
+.fourteen:hover span:nth-child(7) {
+  animation: jump-one 0.5s 0.5s;
+}
+.fourteen:hover span:nth-child(8) {
+  animation: jump-one 0.5s 0.45s;
+}
+.fourteen:hover span:nth-child(9) {
+  animation: jump-one 0.5s 0.4s;
+}
+.fourteen:hover span:nth-child(11) {
+  animation: jump-one 0.5s 0.35s;
+}
+.fourteen:hover span:nth-child(12) {
+  animation: jump-one 0.5s 0.3s;
+}
+.fourteen:hover span:nth-child(13) {
+  animation: jump-one 0.5s 0.25s;
+}
+.fourteen:hover span:nth-child(14) {
+  animation: jump-one 0.5s 0.2s;
+}
+.fourteen:hover span:nth-child(15) {
+  animation: jump-one 0.5s 0.15s;
+}
+.fourteen:hover span:nth-child(16) {
+  animation: jump-one 0.5s 0.1s;
+}
+.fourteen:hover span:nth-child(17) {
+  animation: jump-one 0.5s 0.05s;
+}
+.fourteen:hover span:nth-child(18) {
+  animation: jump-one 0.5s 0s;
+}
+
+@keyframes jump-one {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: -10px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+/* ANIMATION FOURTEEN */
+
+/* ANIMATION FIFTEEN */
+
+span {
+  margin-left: -7px;
+  position: relative;
+  top: 0;
+}
+#space {
+  color: #00000000;
+}
+.fifteen:hover span:nth-child(1) {
+  animation: jump-one 0.5s 0s;
+}
+.fifteen:hover span:nth-child(2) {
+  animation: jump-one 0.5s 0.05s;
+}
+.fifteen:hover span:nth-child(3) {
+  animation: jump-one 0.5s 0.1s;
+}
+.fifteen:hover span:nth-child(4) {
+  animation: jump-one 0.5s 0.15s;
+}
+.fifteen:hover span:nth-child(5) {
+  animation: jump-one 0.5s 0.2s;
+}
+.fifteen:hover span:nth-child(6) {
+  animation: jump-one 0.5s 0.25s;
+}
+.fifteen:hover span:nth-child(7) {
+  animation: jump-one 0.5s 0.3s;
+}
+.fifteen:hover span:nth-child(8) {
+  animation: jump-one 0.5s 0.35s;
+}
+.fifteen:hover span:nth-child(9) {
+  animation: jump-one 0.5s 0.35s;
+}
+.fifteen:hover span:nth-child(11) {
+  animation: jump-one 0.5s 0.3s;
+}
+.fifteen:hover span:nth-child(12) {
+  animation: jump-one 0.5s 0.25s;
+}
+.fifteen:hover span:nth-child(13) {
+  animation: jump-one 0.5s 0.2s;
+}
+.fifteen:hover span:nth-child(14) {
+  animation: jump-one 0.5s 0.15s;
+}
+.fifteen:hover span:nth-child(15) {
+  animation: jump-one 0.5s 0.1s;
+}
+.fifteen:hover span:nth-child(16) {
+  animation: jump-one 0.5s 0.05s;
+}
+.fifteen:hover span:nth-child(17) {
+  animation: jump-one 0.5s 0s;
+}
+
+@keyframes jump-one {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: -10px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+/* ANIMATION FIFTEEN */
+
+/* ANIMATION SIXTEEN */
+
+span {
+  margin-left: -7px;
+  position: relative;
+  top: 0;
+}
+#space {
+  color: #00000000;
+}
+.sixteen:hover span:nth-child(1) {
+  animation: jump-one 0.5s 0.35s;
+}
+.sixteen:hover span:nth-child(2) {
+  animation: jump-one 0.5s 0.3s;
+}
+.sixteen:hover span:nth-child(3) {
+  animation: jump-one 0.5s 0.25s;
+}
+.sixteen:hover span:nth-child(4) {
+  animation: jump-one 0.5s 0.2s;
+}
+.sixteen:hover span:nth-child(5) {
+  animation: jump-one 0.5s 0.15s;
+}
+.sixteen:hover span:nth-child(6) {
+  animation: jump-one 0.5s 0.1s;
+}
+.sixteen:hover span:nth-child(7) {
+  animation: jump-one 0.5s 0.05s;
+}
+.sixteen:hover span:nth-child(8) {
+  animation: jump-one 0.5s 0s;
+}
+.sixteen:hover span:nth-child(9) {
+  animation: jump-one 0.5s 0s;
+}
+.sixteen:hover span:nth-child(11) {
+  animation: jump-one 0.5s 0.05s;
+}
+.sixteen:hover span:nth-child(12) {
+  animation: jump-one 0.5s 0.1s;
+}
+.sixteen:hover span:nth-child(13) {
+  animation: jump-one 0.5s 0.15s;
+}
+.sixteen:hover span:nth-child(14) {
+  animation: jump-one 0.5s 0.2s;
+}
+.sixteen:hover span:nth-child(15) {
+  animation: jump-one 0.5s 0.25s;
+}
+.sixteen:hover span:nth-child(16) {
+  animation: jump-one 0.5s 0.3s;
+}
+.sixteen:hover span:nth-child(17) {
+  animation: jump-one 0.5s 0.35s;
+}
+
+@keyframes jump-one {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: -10px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+/* ANIMATION SIXTEEN */
+
+/* ANIMATION SEVENTEEN */
+
+span {
+  margin-left: -7px;
+  position: relative;
+  top: 0;
+}
+#space {
+  color: #00000000;
+}
+.seventeen:hover span:nth-child(1) {
+  animation: jump-one 0.5s 0s;
+}
+.seventeen:hover span:nth-child(2) {
+  animation: jump-one 0.5s 0.05s;
+}
+.seventeen:hover span:nth-child(3) {
+  animation: jump-one 0.5s 0.1s;
+}
+.seventeen:hover span:nth-child(4) {
+  animation: jump-one 0.5s 0.15s;
+}
+.seventeen:hover span:nth-child(5) {
+  animation: jump-one 0.5s 0.2s;
+}
+.seventeen:hover span:nth-child(6) {
+  animation: jump-one 0.5s 0.25s;
+}
+.seventeen:hover span:nth-child(7) {
+  animation: jump-one 0.5s 0.3s;
+}
+.seventeen:hover span:nth-child(8) {
+  animation: jump-one 0.5s 0.35s;
+}
+.seventeen:hover span:nth-child(9) {
+  animation: jump-one 0.5s 0.4s;
+}
+.seventeen:hover span:nth-child(11) {
+  animation: jump-one 0.5s 0s;
+}
+.seventeen:hover span:nth-child(12) {
+  animation: jump-one 0.5s 0.05s;
+}
+.seventeen:hover span:nth-child(13) {
+  animation: jump-one 0.5s 0.1s;
+}
+.seventeen:hover span:nth-child(14) {
+  animation: jump-one 0.5s 0.15s;
+}
+.seventeen:hover span:nth-child(15) {
+  animation: jump-one 0.5s 0.2s;
+}
+.seventeen:hover span:nth-child(16) {
+  animation: jump-one 0.5s 0.25s;
+}
+.seventeen:hover span:nth-child(17) {
+  animation: jump-one 0.5s 0.3s;
+}
+.seventeen:hover span:nth-child(18) {
+  animation: jump-one 0.5s 0.35s;
+}
+.seventeen:hover span:nth-child(19) {
+  animation: jump-one 0.5s 0.4s;
+}
+
+@keyframes jump-one {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: -10px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+/* ANIMATION SEVENTEEN */
+
+/* ANIMATION EIGHTEEN */
+
+span {
+  margin-left: -7px;
+  position: relative;
+  top: 0;
+}
+#space {
+  color: #00000000;
+}
+.eighteen:hover span:nth-child(1) {
+  animation: jump-one 0.5s 0.4s;
+}
+.eighteen:hover span:nth-child(2) {
+  animation: jump-one 0.5s 0.35s;
+}
+.eighteen:hover span:nth-child(3) {
+  animation: jump-one 0.5s 0.3s;
+}
+.eighteen:hover span:nth-child(4) {
+  animation: jump-one 0.5s 0.25s;
+}
+.eighteen:hover span:nth-child(5) {
+  animation: jump-one 0.5s 0.2s;
+}
+.eighteen:hover span:nth-child(6) {
+  animation: jump-one 0.5s 0.15s;
+}
+.eighteen:hover span:nth-child(7) {
+  animation: jump-one 0.5s 0.1s;
+}
+.eighteen:hover span:nth-child(8) {
+  animation: jump-one 0.5s 0.05s;
+}
+.eighteen:hover span:nth-child(9) {
+  animation: jump-one 0.5s 0s;
+}
+.eighteen:hover span:nth-child(11) {
+  animation: jump-one 0.5s 0.35s;
+}
+.eighteen:hover span:nth-child(12) {
+  animation: jump-one 0.5s 0.3s;
+}
+.eighteen:hover span:nth-child(13) {
+  animation: jump-one 0.5s 0.25s;
+}
+.eighteen:hover span:nth-child(14) {
+  animation: jump-one 0.5s 0.2s;
+}
+.eighteen:hover span:nth-child(15) {
+  animation: jump-one 0.5s 0.15s;
+}
+.eighteen:hover span:nth-child(16) {
+  animation: jump-one 0.5s 0.1s;
+}
+.eighteen:hover span:nth-child(17) {
+  animation: jump-one 0.5s 0.05s;
+}
+.eighteen:hover span:nth-child(18) {
+  animation: jump-one 0.5s 0s;
+}
+
+@keyframes jump-one {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: -10px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+/* ANIMATION EIGHTEEN */
 
 /* ANIMATED COLORFULL BORDERS */
 
