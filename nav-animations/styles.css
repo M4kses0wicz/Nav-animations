@@ -29,15 +29,24 @@ ul {
   ul {
     font-size: 15px;
   }
+  span {
+    margin-left: -5px !important;
+  }
 }
 @media (max-width: 1220px) {
   ul {
     font-size: 10px;
   }
+  span {
+    margin-left: -3px !important;
+  }
 }
 @media (max-width: 1000px) {
   ul {
     font-size: 7px;
+  }
+  span {
+    margin-left: -2px !important;
   }
 }
 @media (max-width: 880px) {
@@ -46,6 +55,9 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  span {
+    margin-left: -7px !important;
   }
 }
 
