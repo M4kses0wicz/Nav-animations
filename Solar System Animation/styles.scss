@@ -1,0 +1,3218 @@
+$font-color: rgb(41, 144, 0);
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+.bg {
+  animation: bg-color 0.15s linear 5.5s forwards;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  @include flex-center();
+  border-bottom: white 5px dashed;
+}
+span {
+  @include flex-center();
+  z-index: 10;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 45vh;
+  text-align: left;
+  text-align: justify;
+  position: relative;
+  div {
+    font-weight: 700;
+  }
+}
+.solar-system {
+  display: flex;
+  align-self: flex-start;
+}
+body {
+  @include flex-center();
+  color: $font-color;
+  font-family: "Roboto Mono", monospace;
+  font-size: 16px;
+  background: radial-gradient(#0a0425, #000);
+  font-weight: 700;
+}
+span::before {
+  content: "";
+  animation: typing 10s 1s forwards;
+}
+.second-code::before {
+  content: "";
+  animation: second-typing 14s 8s forwards;
+}
+.typewriter {
+  width: 1px;
+  border-radius: 5px;
+  animation: tw-blink 0.8s infinite;
+  height: 18px;
+  background-color: $font-color;
+}
+.star-first {
+  width: 0px;
+  height: 0px;
+  border-radius: 0px;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0)
+  );
+}
+.solar-system {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .star {
+    position: relative;
+    animation: star-first 0.5s 20.75s forwards;
+  }
+}
+
+.sun {
+  background: radial-gradient(
+    ellipse at center,
+    #ffd00000 1%,
+    #f9b70000 39%,
+    #f9b70000 39%,
+    #e0641700 100%
+  );
+  width: 0px;
+  height: 0px;
+  border-radius: 0px;
+  background-clip: padding-box;
+  border: 0 !important;
+  background-position: 0px 0px;
+  background-size: 0%;
+  box-shadow: 0 0 10px 2px rgba(255, 106, 0, 0),
+    0 0 22px 20px rgba(255, 204, 0, 0);
+  align-self: center;
+  margin-right: auto;
+  margin-left: auto;
+  animation: sun 0.5s 23.25s forwards;
+}
+.third-code::before {
+  content: "";
+  animation: third-code 12s 22.5s forwards;
+}
+.venus-orbit {
+  position: absolute;
+  width: calc(50vh - 165px);
+  align-self: center;
+  height: calc(50vh - 165px);
+  animation: orbit 20s 66.5s linear infinite;
+}
+.venus {
+  height: 0px;
+  width: 0px;
+  position: relative;
+  border-radius: 100%;
+  background-color: #ffc28500;
+  border-color: #ff945e00;
+  border-style: solid;
+  border-width: 3.5px 0px 0px 0px;
+  animation: venus 0.5s 58s forwards;
+  transform: rotate(-50deg);
+}
+.earth {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-radius: 0%;
+  background-color: #0058b000;
+  border-color: #00366c00;
+  border-style: solid;
+  margin-top: 20px;
+  border-width: 0px 0px 0px 0px;
+  animation: earth 0.5s 74s forwards;
+  transform: rotate(-50deg);
+}
+.earth-orbit {
+  position: absolute;
+  z-index: 4;
+  width: calc(50vh - 55px);
+  align-self: center;
+  height: calc(50vh - 55px);
+  animation: orbit 35s 82s linear infinite;
+}
+.moon {
+  position: absolute;
+  z-index: 5;
+  width: 0px;
+  height: 0px;
+  border-radius: 0%;
+  background-color: #cccccc00;
+  animation: moon 0.5s 94.25s forwards;
+}
+.moon-orbit {
+  animation: orbit 3s 0s linear infinite;
+  width: 34px;
+  position: absolute;
+  z-index: 4;
+  right: -13px;
+  height: 4px;
+}
+.mars-orbit {
+  position: absolute;
+  z-index: 4;
+  width: calc(50vh + 15px);
+  height: calc(50vh + 15px);
+  animation: orbit 60s 110.5s linear infinite;
+}
+.mars {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-radius: 0%;
+  background-color: #b0000000;
+  border-color: rgba(102, 0, 0, 0);
+  border-style: solid;
+  border-width: 0px 0px 0px 0px;
+  animation: mars 0.5s 100s forwards;
+  transform: rotate(-50deg);
+}
+
+@keyframes mars {
+  from {
+    width: 0px;
+    height: 0px;
+    border-radius: 0%;
+    background-color: #b0000000;
+    border-color: rgba(102, 0, 0, 0);
+    border-style: solid;
+    border-width: 0px 0px 0px 0px;
+  }
+  to {
+    width: 7px;
+    height: 7px;
+    border-radius: 100%;
+    background-color: #b00000;
+    border-color: #600;
+    border-style: solid;
+    border-width: 2.5px 0px 0px 0px;
+  }
+}
+
+@keyframes venus {
+  from {
+    height: 0px;
+    width: 0px;
+    border-radius: 100%;
+    background-color: #ffc28500;
+    border-color: #ff945e00;
+  }
+  to {
+    height: 9px;
+    width: 9px;
+    border-radius: 100%;
+    background-color: #ffc285;
+    border-color: #ff945e;
+  }
+}
+
+@keyframes third-code {
+  0% {
+    content: ".";
+  }
+  1% {
+    content: ".s";
+  }
+  2% {
+    content: ".su";
+  }
+  3% {
+    content: ".sun";
+  }
+  5% {
+    content: ".sun";
+  }
+  6% {
+    content: '<div class="sun"></div>';
+  }
+  13% {
+    content: '<div class="sun"></div>';
+  }
+  14% {
+    content: "<div class=";
+  }
+  15% {
+    content: "<d";
+  }
+  16% {
+    content: "";
+  }
+}
+
+@keyframes sun {
+  from {
+    background: radial-gradient(
+      ellipse at center,
+      #ffd00000 1%,
+      #f9b70000 39%,
+      #f9b70000 39%,
+      #e0641700 100%
+    );
+    width: 0px;
+    height: 0px;
+    border-radius: 0px;
+    background-clip: padding-box;
+    border: 0 !important;
+    background-position: 0px 0px;
+    background-size: 0%;
+    box-shadow: 0 0 10px 2px rgba(255, 106, 0, 0),
+      0 0 22px 20px rgba(246, 255, 0, 0);
+    align-self: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  to {
+    background: radial-gradient(
+      ellipse at center,
+      #ffd000 1%,
+      #f9b700 39%,
+      #f9b700 39%,
+      #e06417db 100%
+    );
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-clip: padding-box;
+    border: 0 !important;
+    background-position: -28px -16px;
+    background-size: 175%;
+    box-shadow: 0 0 10px 2px rgba(255, 107, 0, 0.2),
+      0 0 22px 20px rgba(255, 203, 0, 0.1);
+    align-self: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+.mercury-orbit {
+  position: absolute;
+  z-index: 4;
+  width: calc(50vh - 250px);
+  align-self: center;
+  height: calc(50vh - 250px);
+  animation: orbit 10s 50.5s linear infinite;
+}
+.mercury {
+  background: #ff770000;
+  width: 0px;
+  height: 0px;
+  border-radius: 7px;
+  position: relative;
+  animation: mercury 0.5s 31.5s forwards;
+}
+.fourth-code::before {
+  content: "";
+  animation: fourth-code 12s 25.5s forwards;
+}
+.fifth-code::before {
+  content: "";
+  animation: fifth-code 12s 33.25s forwards;
+}
+.sixth-code::before {
+  content: "";
+  animation: sixth-code 12s 44s forwards;
+}
+.seventh-code::before {
+  content: "";
+  animation: seventh-code 12s 52.5s forwards;
+}
+.eighth-code::before {
+  content: "";
+  animation: eighth-code 12s 60s forwards;
+}
+.ninth-code::before {
+  content: "";
+  animation: ninth-code 12s 68.5s forwards;
+}
+.tenth-code::before {
+  content: "";
+  animation: tenth-code 12s 75.5s forwards;
+}
+.eleventh-code::before {
+  content: "";
+  animation: eleventh-code 12s 83.5s forwards;
+}
+.twelfth-code::before {
+  content: "";
+  animation: twelfth-code 12s 96s forwards;
+}
+.thirteenth-code::before {
+  content: "";
+  animation: thirteenth-code 12s 104s forwards;
+}
+.fourteenth-code::before {
+  content: "";
+  animation: fourteenth-code 12s 112s forwards;
+}
+.last-code::before {
+  content: "";
+  animation: last-code 12s 125s forwards;
+}
+.last-code {
+  color: #00000000;
+}
+
+@keyframes last-code {
+  from {
+    content: "";
+  }
+  to {
+    content: "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000easter0egg0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000";
+  }
+}
+
+@keyframes fourteenth-code {
+  0% {
+    content: "f";
+  }
+  1% {
+    content: "fo";
+  }
+  2% {
+    content: "for";
+  }
+  3% {
+    content: "for (";
+  }
+  4% {
+    content: "for (l";
+  }
+  5% {
+    content: "for (le";
+  }
+  6% {
+    content: "for (let";
+  }
+  7% {
+    content: "for (let i";
+  }
+  8% {
+    content: "for (let i =";
+  }
+  9% {
+    content: "for (let i = 0";
+  }
+  10% {
+    content: "for (let i = 0;";
+  }
+  11% {
+    content: "for (let i = 0; i";
+  }
+  12% {
+    content: "for (let i = 0; i >";
+  }
+  13% {
+    content: "for (let i = 0; i > 2";
+  }
+  14% {
+    content: "for (let i = 0; i > 250";
+  }
+  15% {
+    content: "for (let i = 0; i > 250;";
+  }
+  16% {
+    content: "for (let i = 0; i > 250; i";
+  }
+  17% {
+    content: "for (let i = 0; i > 250; i+";
+  }
+  18% {
+    content: "for (let i = 0; i > 250; i++";
+  }
+  19% {
+    content: "for (let i = 0; i > 250; i++)";
+  }
+  20% {
+    content: "for (let i = 0; i > 250; i++) {";
+  }
+  21% {
+    content: "for (let i = 0; i > 250; i++) {d";
+  }
+  22% {
+    content: "for (let i = 0; i > 250; i++) {do";
+  }
+  23% {
+    content: "for (let i = 0; i > 250; i++) {doc";
+  }
+  24% {
+    content: "for (let i = 0; i > 250; i++) {docu";
+  }
+  25% {
+    content: "for (let i = 0; i > 250; i++) {docum";
+  }
+  26% {
+    content: "for (let i = 0; i > 250; i++) {docume";
+  }
+  27% {
+    content: "for (let i = 0; i > 250; i++) {documen";
+  }
+  28% {
+    content: "for (let i = 0; i > 250; i++) {document";
+  }
+  29% {
+    content: "for (let i = 0; i > 250; i++) {document.";
+  }
+  30% {
+    content: "for (let i = 0; i > 250; i++) {document.q";
+  }
+  31% {
+    content: "for (let i = 0; i > 250; i++) {document.qu";
+  }
+  32% {
+    content: "for (let i = 0; i > 250; i++) {document.que";
+  }
+  33% {
+    content: "for (let i = 0; i > 250; i++) {document.quer";
+  }
+  34% {
+    content: "for (let i = 0; i > 250; i++) {document.query";
+  }
+  35% {
+    content: "for (let i = 0; i > 250; i++) {document.queryS";
+  }
+  36% {
+    content: "for (let i = 0; i > 250; i++) {document.querySe";
+  }
+  37% {
+    content: "for (let i = 0; i > 250; i++) {document.querySel";
+  }
+  38% {
+    content: "for (let i = 0; i > 250; i++) {document.querySele";
+  }
+  39% {
+    content: "for (let i = 0; i > 250; i++) {document.querySelec";
+  }
+  40% {
+    content: "for (let i = 0; i > 250; i++) {document.querySelect";
+  }
+  41% {
+    content: "for (let i = 0; i > 250; i++) {document.querySelecto";
+  }
+  42% {
+    content: "for (let i = 0; i > 250; i++) {document.querySelector";
+  }
+  43% {
+    content: "for (let i = 0; i > 250; i++) {document.querySelector";
+  }
+  44% {
+    content: "for (let i = 0; i > 250; i++) {document.querySelector(";
+  }
+  45% {
+    content: "for (let i = 0; i > 250; i++) {document.querySelector('";
+  }
+  46% {
+    content: "for (let i = 0; i > 250; i++) {document.querySelector('ast";
+  }
+  47% {
+    content: "for (let i = 0; i > 250; i++) {document.querySelector('asteroi";
+  }
+  48% {
+    content: "for (let i = 0; i > 250; i++) {document.querySelector('asteroid')";
+  }
+  49% {
+    content: "for (let i = 0; i > 250; i++) {document.querySelector('asteroid').";
+  }
+  50% {
+    content: "for (let i = 0; i > 250; i++) {document.querySelector('asteroid').a";
+  }
+  51% {
+    content: "for (let i = 0; i > 250; i++) {document.querySelector('asteroid').ap";
+  }
+  52% {
+    content: "for (let i = 0; i > 250; i++) {document.querySelector('asteroid').app";
+  }
+  53% {
+    content: "for (let i = 0; i > 250; i++) {document.querySelector('asteroid').appe";
+  }
+  54% {
+    content: "for (let i = 0; i > 250; i++) {document.querySelector('asteroid').appen";
+  }
+  55% {
+    content: "for (let i = 0; i > 250; i++) {document.querySelector('asteroid').append";
+  }
+  56% {
+    content: "for (let i = 0; i > 250; i++) {document.querySelector('asteroid').appendC";
+  }
+  57% {
+    content: "for (let i = 0; i > 250; i++) {document.querySelector('asteroid').appendCh";
+  }
+  58% {
+    content: "for (let i = 0; i > 250; i++) {document.querySelector('asteroid').appendChi";
+  }
+  59% {
+    content: "for (let i = 0; i > 250; i++) {document.querySelector('asteroid').appendChil";
+  }
+  60% {
+    content: "for (let i = 0; i > 250; i++) {document.querySelector('asteroid').appendChild";
+  }
+  61% {
+    content: "for (let i = 0; i > 250; i++) {document.querySelector('asteroid').appendChild(";
+  }
+  62% {
+    content: "for (let i = 0; i > 250; i++) {document.querySelector('asteroid').appendChild(d";
+  }
+  63% {
+    content: "for (let i = 0; i > 250; i++) {document.querySelector('asteroid').appendChild(do";
+  }
+  64% {
+    content: "for (let i = 0; i > 250; i++) {document.querySelector('asteroid').appendChild(doc";
+  }
+  65% {
+    content: "for (let i = 0; i > 250; i++) {document.querySelector('asteroid').appendChild(docu";
+  }
+  66% {
+    content: "for (let i = 0; i > 250; i++) {document.querySelector('asteroid').appendChild(docum";
+  }
+  67% {
+    content: "for (let i = 0; i > 250; i++) {document.querySelector('asteroid').appendChild(docume";
+  }
+  68% {
+    content: "for (let i = 0; i > 250; i++) {document.querySelector('asteroid').appendChild(documen";
+  }
+  69% {
+    content: "for (let i = 0; i > 250; i++) {document.querySelector('asteroid').appendChild(document.";
+  }
+  70% {
+    content: "for (let i = 0; i > 250; i++) {document.querySelector('asteroid').appendChild(document.c";
+  }
+  71% {
+    content: "for (let i = 0; i > 250; i++) {document.querySelector('asteroid').appendChild(document.cr";
+  }
+  72% {
+    content: "for (let i = 0; i > 250; i++) {document.querySelector('asteroid').appendChild(document.cre";
+  }
+  73% {
+    content: "for (let i = 0; i > 250; i++) {document.querySelector('asteroid').appendChild(document.crea";
+  }
+  74% {
+    content: "for (let i = 0; i > 250; i++) {document.querySelector('asteroid').appendChild(document.creat";
+  }
+  75% {
+    content: "for (let i = 0; i > 250; i++) {document.querySelector('asteroid').appendChild(document.create";
+  }
+  76% {
+    content: "for (let i = 0; i > 250; i++) {document.querySelector('asteroid').appendChild(document.createE";
+  }
+  77% {
+    content: "for (let i = 0; i > 250; i++) {document.querySelector('asteroid').appendChild(document.createEl";
+  }
+  78% {
+    content: "for (let i = 0; i > 250; i++) {document.querySelector('asteroid').appendChild(document.createEle";
+  }
+  79% {
+    content: "for (let i = 0; i > 250; i++) {document.querySelector('asteroid').appendChild(document.createElem";
+  }
+  80% {
+    content: "for (let i = 0; i > 250; i++) {document.querySelector('asteroid').appendChild(document.createEleme";
+  }
+  81% {
+    content: "for (let i = 0; i > 250; i++) {document.querySelector('asteroid').appendChild(document.createElemen";
+  }
+  82% {
+    content: "for (let i = 0; i > 250; i++) {document.querySelector('asteroid').appendChild(document.createElement";
+  }
+  83% {
+    content: "for (let i = 0; i > 250; i++) {document.querySelector('asteroid').appendChild(document.createElement(";
+  }
+  84% {
+    content: "for (let i = 0; i > 250; i++) {document.querySelector('asteroid').appendChild(document.createElement('";
+  }
+  85% {
+    content: "for (let i = 0; i > 250; i++) {document.querySelector('asteroid').appendChild(document.createElement('s";
+  }
+  86% {
+    content: "for (let i = 0; i > 250; i++) {document.querySelector('asteroid').appendChild(document.createElement('sp";
+  }
+  87% {
+    content: "for (let i = 0; i > 250; i++) {document.querySelector('asteroid').appendChild(document.createElement('span";
+  }
+  88% {
+    content: "for (let i = 0; i > 250; i++) {document.querySelector('asteroid').appendChild(document.createElement('span'";
+  }
+  89% {
+    content: "for (let i = 0; i > 250; i++) {document.querySelector('asteroid').appendChild(document.createElement('span')";
+  }
+  90% {
+    content: "for (let i = 0; i > 250; i++) {document.querySelector('asteroid').appendChild(document.createElement('span'))";
+  }
+  91% {
+    content: "for (let i = 0; i > 250; i++) {document.querySelector('asteroid').appendChild(document.createElement('span'));};";
+  }
+  96% {
+    content: "for (let i = 0; i > 250; i++) {document.querySelector('asteroid').appendChild(document.createElement('span'));};";
+  }
+  97% {
+    content: "for (let i = 0; i > 250; i++) {document.querySelector('asteroid').appendChild(documen";
+  }
+  98% {
+    content: "for (let i = 0; i > 250; i++) {document.querySelec";
+  }
+  99% {
+    content: "for (let i = 0; i > ";
+  }
+  100% {
+    content: "";
+  }
+}
+
+@keyframes thirteenth-code {
+  1% {
+    content: ".";
+  }
+  2% {
+    content: ".m";
+  }
+  3% {
+    content: ".ma";
+  }
+  4% {
+    content: ".mar";
+  }
+  5% {
+    content: ".mars";
+  }
+  6% {
+    content: ".mars-";
+  }
+  7% {
+    content: ".mars-";
+  }
+  8% {
+    content: ".mars-c";
+  }
+  9% {
+    content: ".mars-co";
+  }
+  10% {
+    content: ".mars-con";
+  }
+  11% {
+    content: ".mars-cont";
+  }
+  12% {
+    content: ".mars-conta";
+  }
+  13% {
+    content: ".mars-contai";
+  }
+  14% {
+    content: ".mars-contain";
+  }
+  15% {
+    content: ".mars-containe";
+  }
+  16% {
+    content: ".mars-container";
+  }
+  17% {
+    content: ".mars-container{";
+  }
+  18% {
+    content: ".mars-container{ a";
+  }
+  19% {
+    content: ".mars-container{ an";
+  }
+  20% {
+    content: ".mars-container{ ani";
+  }
+  21% {
+    content: ".mars-container{ anim";
+  }
+  22% {
+    content: ".mars-container{ anima";
+  }
+  23% {
+    content: ".mars-container{ animat";
+  }
+  24% {
+    content: ".mars-container{ animati";
+  }
+  25% {
+    content: ".mars-container{ animatio";
+  }
+  26% {
+    content: ".mars-container{ animation";
+  }
+  27% {
+    content: ".mars-container{ animation:";
+  }
+  28% {
+    content: ".mars-container{ animation: o";
+  }
+  29% {
+    content: ".mars-container{ animation: or";
+  }
+  30% {
+    content: ".mars-container{ animation: orb";
+  }
+  31% {
+    content: ".mars-container{ animation: orbi";
+  }
+  32% {
+    content: ".mars-container{ animation: orbit";
+  }
+  33% {
+    content: ".mars-container{ animation: orbit 35";
+  }
+  34% {
+    content: ".mars-container{ animation: orbit 35s";
+  }
+  35% {
+    content: ".mars-container{ animation: orbit 35s 0";
+  }
+  36% {
+    content: ".mars-container{ animation: orbit 35s 0s";
+  }
+  37% {
+    content: ".mars-container{ animation: orbit 35s 0s l";
+  }
+  38% {
+    content: ".mars-container{ animation: orbit 35s 0s li";
+  }
+  39% {
+    content: ".mars-container{ animation: orbit 35s 0s lin";
+  }
+  40% {
+    content: ".mars-container{ animation: orbit 35s 0s line";
+  }
+  41% {
+    content: ".mars-container{ animation: orbit 35s 0s linea";
+  }
+  42% {
+    content: ".mars-container{ animation: orbit 35s 0s linear";
+  }
+  43% {
+    content: ".mars-container{ animation: orbit 35s 0s linear i";
+  }
+  44% {
+    content: ".mars-container{ animation: orbit 35s 0s linear in";
+  }
+  45% {
+    content: ".mars-container{ animation: orbit 35s 0s linear inf";
+  }
+  46% {
+    content: ".mars-container{ animation: orbit 35s 0s linear infi";
+  }
+  47% {
+    content: ".mars-container{ animation: orbit 35s 0s linear infin";
+  }
+  48% {
+    content: ".mars-container{ animation: orbit 35s 0s linear infini";
+  }
+  49% {
+    content: ".mars-container{ animation: orbit 35s 0s linear infinit";
+  }
+  50% {
+    content: ".mars-container{ animation: orbit 35s 0s linear infinite";
+  }
+  51% {
+    content: ".mars-container{ animation: orbit 35s 0s linear infinite;";
+  }
+  52% {
+    content: ".mars-container{ animation: orbit 35s 0s linear infinite; }";
+  }
+  57% {
+    content: ".mars-container{ animation: orbit 35s 0s linear infinite; }";
+  }
+  58% {
+    content: ".mars-container{ animation: orbit 35s 0s l";
+  }
+  59% {
+    content: ".mars-container{ a";
+  }
+  60% {
+    content: ".ea";
+  }
+  62% {
+    content: "";
+  }
+}
+
+@keyframes twelfth-code {
+  0% {
+    content: "";
+  }
+  1% {
+    content: "<d";
+  }
+  2% {
+    content: "<di";
+  }
+  3% {
+    content: "<div";
+  }
+  4% {
+    content: "<div c";
+  }
+  5% {
+    content: "<div cl";
+  }
+  6% {
+    content: "<div cla";
+  }
+  7% {
+    content: "<div clas";
+  }
+  8% {
+    content: "<div class";
+  }
+  9% {
+    content: "<div class=";
+  }
+  10% {
+    content: '<div class="';
+  }
+  11% {
+    content: '<div class="m';
+  }
+  12% {
+    content: '<div class="ma';
+  }
+  13% {
+    content: '<div class="mar';
+  }
+  14% {
+    content: '<div class="mars';
+  }
+  15% {
+    content: '<div class="mars';
+  }
+  16% {
+    content: '<div class="mars-';
+  }
+  17% {
+    content: '<div class="mars-';
+  }
+  18% {
+    content: '<div class="mars-c';
+  }
+  19% {
+    content: '<div class="mars-co';
+  }
+  20% {
+    content: '<div class="mars-con';
+  }
+  21% {
+    content: '<div class="mars-cont';
+  }
+  22% {
+    content: '<div class="mars-conta';
+  }
+  23% {
+    content: '<div class="mars-contai';
+  }
+  24% {
+    content: '<div class="mars-contain';
+  }
+  25% {
+    content: '<div class="mars-containe';
+  }
+  26% {
+    content: '<div class="mars-container';
+  }
+  27% {
+    content: '<div class="mars-container"';
+  }
+  28% {
+    content: '<div class="mars-container">';
+  }
+  29% {
+    content: '<div class="mars-container"> .';
+  }
+  30% {
+    content: '<div class="mars-container"> .';
+  }
+  31% {
+    content: '<div class="mars-container"> .m';
+  }
+  32% {
+    content: '<div class="mars-container"> .m';
+  }
+  33% {
+    content: '<div class="mars-container"> .ma';
+  }
+  34% {
+    content: '<div class="mars-container"> .mar';
+  }
+  35% {
+    content: '<div class="mars-container"> .mars';
+  }
+  36% {
+    content: '<div class="mars-container"> .mars';
+  }
+  37% {
+    content: '<div class="mars-container"> .mars';
+  }
+  38% {
+    content: '<div class="mars-container"> <div class="mars"></div>"';
+  }
+  39% {
+    content: '<div class="mars-container"> <div class="mars"></div>"';
+  }
+  40% {
+    content: '<div class="mars-container"> <div class="mars"></div> <"';
+  }
+  41% {
+    content: '<div class="mars-container"> <div class="mars"></div> </"';
+  }
+  42% {
+    content: '<div class="mars-container"> <div class="mars"></div> </d"';
+  }
+  43% {
+    content: '<div class="mars-container"> <div class="mars"></div> </di"';
+  }
+  44% {
+    content: '<div class="mars-container"> <div class="mars"></div> </div"';
+  }
+  45% {
+    content: '<div class="mars-container"> <div class="mars"></div> </div>"';
+  }
+  54% {
+    content: '<div class="mars-container"> <div class="mars"></div> </div>"';
+  }
+  55% {
+    content: '<div class="mars-container"> <div class';
+  }
+  56% {
+    content: '<div class="m';
+  }
+  57% {
+    content: "";
+  }
+}
+
+@keyframes moon {
+  from {
+    width: 0px;
+    height: 0px;
+    border-radius: 0%;
+    background-color: #cccccc00;
+  }
+  to {
+    width: 4px;
+    height: 4px;
+    border-radius: 100%;
+    background-color: #ccc;
+  }
+}
+
+@keyframes eleventh-code {
+  1% {
+    content: "d";
+  }
+  2% {
+    content: "do";
+  }
+  3% {
+    content: "doc";
+  }
+  4% {
+    content: "docu";
+  }
+  5% {
+    content: "docum";
+  }
+  6% {
+    content: "docume";
+  }
+  7% {
+    content: "documen";
+  }
+  8% {
+    content: "document";
+  }
+  9% {
+    content: "document.";
+  }
+  10% {
+    content: "document.q";
+  }
+  11% {
+    content: "document.qu";
+  }
+  12% {
+    content: "document.que";
+  }
+  13% {
+    content: "document.quer";
+  }
+  14% {
+    content: "document.query";
+  }
+  15% {
+    content: "document.queryS";
+  }
+  16% {
+    content: "document.querySe";
+  }
+  17% {
+    content: "document.querySel";
+  }
+  18% {
+    content: "document.querySele";
+  }
+  19% {
+    content: "document.querySelec";
+  }
+  20% {
+    content: "document.querySelect";
+  }
+  21% {
+    content: "document.querySelecto";
+  }
+  22% {
+    content: "document.querySelector";
+  }
+  23% {
+    content: "document.querySelector";
+  }
+  24% {
+    content: "document.querySelector(";
+  }
+  25% {
+    content: "document.querySelector('";
+  }
+  26% {
+    content: "document.querySelector('ear";
+  }
+  27% {
+    content: "document.querySelector('earth')";
+  }
+  28% {
+    content: "document.querySelector('earth')";
+  }
+  29% {
+    content: "document.querySelector('earth').";
+  }
+  30% {
+    content: "document.querySelector('earth').a";
+  }
+  31% {
+    content: "document.querySelector('earth').ap";
+  }
+  32% {
+    content: "document.querySelector('earth').app";
+  }
+  33% {
+    content: "document.querySelector('earth').appe";
+  }
+  34% {
+    content: "document.querySelector('earth').appen";
+  }
+  35% {
+    content: "document.querySelector('earth').append";
+  }
+  36% {
+    content: "document.querySelector('earth').appendC";
+  }
+  37% {
+    content: "document.querySelector('earth').appendCh";
+  }
+  38% {
+    content: "document.querySelector('earth').appendChi";
+  }
+  39% {
+    content: "document.querySelector('earth').appendChil";
+  }
+  40% {
+    content: "document.querySelector('earth').appendChild";
+  }
+  41% {
+    content: "document.querySelector('earth').appendChild(";
+  }
+  42% {
+    content: "document.querySelector('earth').appendChild(d";
+  }
+  43% {
+    content: "document.querySelector('earth').appendChild(do";
+  }
+  44% {
+    content: "document.querySelector('earth').appendChild(doc";
+  }
+  45% {
+    content: "document.querySelector('earth').appendChild(docu";
+  }
+  46% {
+    content: "document.querySelector('earth').appendChild(docum";
+  }
+  47% {
+    content: "document.querySelector('earth').appendChild(docume";
+  }
+  48% {
+    content: "document.querySelector('earth').appendChild(documen";
+  }
+  49% {
+    content: "document.querySelector('earth').appendChild(document.";
+  }
+  50% {
+    content: "document.querySelector('earth').appendChild(document.c";
+  }
+  51% {
+    content: "document.querySelector('earth').appendChild(document.cr";
+  }
+  52% {
+    content: "document.querySelector('earth').appendChild(document.cre";
+  }
+  53% {
+    content: "document.querySelector('earth').appendChild(document.crea";
+  }
+  54% {
+    content: "document.querySelector('earth').appendChild(document.creat";
+  }
+  55% {
+    content: "document.querySelector('earth').appendChild(document.create";
+  }
+  56% {
+    content: "document.querySelector('earth').appendChild(document.createE";
+  }
+  57% {
+    content: "document.querySelector('earth').appendChild(document.createEl";
+  }
+  58% {
+    content: "document.querySelector('earth').appendChild(document.createEle";
+  }
+  59% {
+    content: "document.querySelector('earth').appendChild(document.createElem";
+  }
+  60% {
+    content: "document.querySelector('earth').appendChild(document.createEleme";
+  }
+  61% {
+    content: "document.querySelector('earth').appendChild(document.createElemen";
+  }
+  62% {
+    content: "document.querySelector('earth').appendChild(document.createElement";
+  }
+  63% {
+    content: "document.querySelector('earth').appendChild(document.createElement(";
+  }
+  64% {
+    content: "document.querySelector('earth').appendChild(document.createElement('";
+  }
+  65% {
+    content: "document.querySelector('earth').appendChild(document.createElement('d";
+  }
+  66% {
+    content: "document.querySelector('earth').appendChild(document.createElement('di";
+  }
+  67% {
+    content: "document.querySelector('earth').appendChild(document.createElement('div";
+  }
+  68% {
+    content: "document.querySelector('earth').appendChild(document.createElement('div'";
+  }
+  69% {
+    content: "document.querySelector('earth').appendChild(document.createElement('div')";
+  }
+  70% {
+    content: "document.querySelector('earth').appendChild(document.createElement('div').";
+  }
+  71% {
+    content: "document.querySelector('earth').appendChild(document.createElement('div').c";
+  }
+  72% {
+    content: "document.querySelector('earth').appendChild(document.createElement('div').cl";
+  }
+  73% {
+    content: "document.querySelector('earth').appendChild(document.createElement('div').cla";
+  }
+  74% {
+    content: "document.querySelector('earth').appendChild(document.createElement('div').class";
+  }
+  75% {
+    content: "document.querySelector('earth').appendChild(document.createElement('div').classL";
+  }
+  76% {
+    content: "document.querySelector('earth').appendChild(document.createElement('div').classLi";
+  }
+  77% {
+    content: "document.querySelector('earth').appendChild(document.createElement('div').classLis";
+  }
+  78% {
+    content: "document.querySelector('earth').appendChild(document.createElement('div').classList";
+  }
+  79% {
+    content: "document.querySelector('earth').appendChild(document.createElement('div').classList.";
+  }
+  79% {
+    content: "document.querySelector('earth').appendChild(document.createElement('div').classList.a";
+  }
+  80% {
+    content: "document.querySelector('earth').appendChild(document.createElement('div').classList.ad";
+  }
+  81% {
+    content: "document.querySelector('earth').appendChild(document.createElement('div').classList.add";
+  }
+  82% {
+    content: "document.querySelector('earth').appendChild(document.createElement('div').classList.add(";
+  }
+  83% {
+    content: "document.querySelector('earth').appendChild(document.createElement('div').classList.add('";
+  }
+  84% {
+    content: "document.querySelector('earth').appendChild(document.createElement('div').classList.add('m";
+  }
+  85% {
+    content: "document.querySelector('earth').appendChild(document.createElement('div').classList.add('mo";
+  }
+  86% {
+    content: "document.querySelector('earth').appendChild(document.createElement('div').classList.add('moo";
+  }
+  87% {
+    content: "document.querySelector('earth').appendChild(document.createElement('div').classList.add('moon";
+  }
+  88% {
+    content: "document.querySelector('earth').appendChild(document.createElement('div').classList.add('moon'";
+  }
+  89% {
+    content: "document.querySelector('earth').appendChild(document.createElement('div').classList.add('moon')";
+  }
+  90% {
+    content: "document.querySelector('earth').appendChild(document.createElement('div').classList.add('moon'))";
+  }
+  95% {
+    content: "document.querySelector('earth').appendChild(document.createElement('div').classList.add('moon'))";
+  }
+  96% {
+    content: "document.querySelector('earth').appendChild(document.createElemen";
+  }
+  98% {
+    content: "document.querySelector('earth').appen";
+  }
+  99% {
+    content: "document.q";
+  }
+  100% {
+    content: "";
+  }
+}
+
+@keyframes tenth-code {
+  1% {
+    content: ".e";
+  }
+  2% {
+    content: ".ea";
+  }
+  3% {
+    content: ".ear";
+  }
+  4% {
+    content: ".eart";
+  }
+  5% {
+    content: ".earth";
+  }
+  6% {
+    content: ".earth-";
+  }
+  7% {
+    content: ".earth-";
+  }
+  8% {
+    content: ".earth-c";
+  }
+  9% {
+    content: ".earth-co";
+  }
+  10% {
+    content: ".earth-con";
+  }
+  11% {
+    content: ".earth-cont";
+  }
+  12% {
+    content: ".earth-conta";
+  }
+  13% {
+    content: ".earth-contai";
+  }
+  14% {
+    content: ".earth-contain";
+  }
+  15% {
+    content: ".earth-containe";
+  }
+  16% {
+    content: ".earth-container";
+  }
+  17% {
+    content: ".earth-container{";
+  }
+  18% {
+    content: ".earth-container{ a";
+  }
+  19% {
+    content: ".earth-container{ an";
+  }
+  20% {
+    content: ".earth-container{ ani";
+  }
+  21% {
+    content: ".earth-container{ anim";
+  }
+  22% {
+    content: ".earth-container{ anima";
+  }
+  23% {
+    content: ".earth-container{ animat";
+  }
+  24% {
+    content: ".earth-container{ animati";
+  }
+  25% {
+    content: ".earth-container{ animatio";
+  }
+  26% {
+    content: ".earth-container{ animation";
+  }
+  27% {
+    content: ".earth-container{ animation:";
+  }
+  28% {
+    content: ".earth-container{ animation: o";
+  }
+  29% {
+    content: ".earth-container{ animation: or";
+  }
+  30% {
+    content: ".earth-container{ animation: orb";
+  }
+  31% {
+    content: ".earth-container{ animation: orbi";
+  }
+  32% {
+    content: ".earth-container{ animation: orbit";
+  }
+  33% {
+    content: ".earth-container{ animation: orbit 35";
+  }
+  34% {
+    content: ".earth-container{ animation: orbit 35s";
+  }
+  35% {
+    content: ".earth-container{ animation: orbit 35s 0";
+  }
+  36% {
+    content: ".earth-container{ animation: orbit 35s 0s";
+  }
+  37% {
+    content: ".earth-container{ animation: orbit 35s 0s l";
+  }
+  38% {
+    content: ".earth-container{ animation: orbit 35s 0s li";
+  }
+  39% {
+    content: ".earth-container{ animation: orbit 35s 0s lin";
+  }
+  40% {
+    content: ".earth-container{ animation: orbit 35s 0s line";
+  }
+  41% {
+    content: ".earth-container{ animation: orbit 35s 0s linea";
+  }
+  42% {
+    content: ".earth-container{ animation: orbit 35s 0s linear";
+  }
+  43% {
+    content: ".earth-container{ animation: orbit 35s 0s linear i";
+  }
+  44% {
+    content: ".earth-container{ animation: orbit 35s 0s linear in";
+  }
+  45% {
+    content: ".earth-container{ animation: orbit 35s 0s linear inf";
+  }
+  46% {
+    content: ".earth-container{ animation: orbit 35s 0s linear infi";
+  }
+  47% {
+    content: ".earth-container{ animation: orbit 35s 0s linear infin";
+  }
+  48% {
+    content: ".earth-container{ animation: orbit 35s 0s linear infini";
+  }
+  49% {
+    content: ".earth-container{ animation: orbit 35s 0s linear infinit";
+  }
+  50% {
+    content: ".earth-container{ animation: orbit 35s 0s linear infinite";
+  }
+  51% {
+    content: ".earth-container{ animation: orbit 35s 0s linear infinite;";
+  }
+  52% {
+    content: ".earth-container{ animation: orbit 35s 0s linear infinite; }";
+  }
+  57% {
+    content: ".earth-container{ animation: orbit 35s 0s linear infinite; }";
+  }
+  58% {
+    content: ".earth-container{ animation: orbit 35s 0s l";
+  }
+  59% {
+    content: ".earth-container{ a";
+  }
+  60% {
+    content: ".ea";
+  }
+  62% {
+    content: "";
+  }
+}
+
+@keyframes earth {
+  from {
+    width: 0px;
+    height: 0px;
+    border-radius: 0%;
+    background-color: #0058b000;
+    border-color: #00366c00;
+    border-style: solid;
+    border-width: 0px 0px 0px 0px;
+  }
+  to {
+    width: 11px;
+    height: 11px;
+    border-radius: 100%;
+    background-color: #0058b0;
+    border-color: #00366c;
+    border-style: solid;
+    border-width: 3.5px 1px 1px 1px;
+  }
+}
+
+@keyframes ninth-code {
+  0% {
+    content: "";
+  }
+  1% {
+    content: "<d";
+  }
+  2% {
+    content: "<di";
+  }
+  3% {
+    content: "<div";
+  }
+  4% {
+    content: "<div c";
+  }
+  5% {
+    content: "<div cl";
+  }
+  6% {
+    content: "<div cla";
+  }
+  7% {
+    content: "<div clas";
+  }
+  8% {
+    content: "<div class";
+  }
+  9% {
+    content: "<div class=";
+  }
+  10% {
+    content: '<div class="';
+  }
+  11% {
+    content: '<div class="e';
+  }
+  12% {
+    content: '<div class="ea';
+  }
+  13% {
+    content: '<div class="ear';
+  }
+  14% {
+    content: '<div class="eart';
+  }
+  15% {
+    content: '<div class="earth';
+  }
+  16% {
+    content: '<div class="earth-';
+  }
+  17% {
+    content: '<div class="earth-';
+  }
+  18% {
+    content: '<div class="earth-c';
+  }
+  19% {
+    content: '<div class="earth-co';
+  }
+  20% {
+    content: '<div class="earth-con';
+  }
+  21% {
+    content: '<div class="earth-cont';
+  }
+  22% {
+    content: '<div class="earth-conta';
+  }
+  23% {
+    content: '<div class="earth-contai';
+  }
+  24% {
+    content: '<div class="earth-contain';
+  }
+  25% {
+    content: '<div class="earth-containe';
+  }
+  26% {
+    content: '<div class="earth-container';
+  }
+  27% {
+    content: '<div class="earth-container"';
+  }
+  28% {
+    content: '<div class="earth-container">';
+  }
+  29% {
+    content: '<div class="earth-container"> .';
+  }
+  30% {
+    content: '<div class="earth-container"> .e';
+  }
+  31% {
+    content: '<div class="earth-container"> .ea';
+  }
+  32% {
+    content: '<div class="earth-container"> .ear';
+  }
+  33% {
+    content: '<div class="earth-container"> .eart';
+  }
+  34% {
+    content: '<div class="earth-container"> .earth';
+  }
+  35% {
+    content: '<div class="earth-container"> .earth';
+  }
+  36% {
+    content: '<div class="earth-container"> .earth';
+  }
+  37% {
+    content: '<div class="earth-container"> <div class="earth"></div>"';
+  }
+  38% {
+    content: '<div class="earth-container"> <div class="earth"></div>"';
+  }
+  39% {
+    content: '<div class="earth-container"> <div class="earth"></div> <"';
+  }
+  40% {
+    content: '<div class="earth-container"> <div class="earth"></div> </"';
+  }
+  41% {
+    content: '<div class="earth-container"> <div class="earth"></div> </d"';
+  }
+  42% {
+    content: '<div class="earth-container"> <div class="earth"></div> </di"';
+  }
+  43% {
+    content: '<div class="earth-container"> <div class="earth"></div> </div"';
+  }
+  44% {
+    content: '<div class="earth-container"> <div class="earth"></div> </div>"';
+  }
+  54% {
+    content: '<div class="earth-container"> <div class="earth"></div> </div>"';
+  }
+  55% {
+    content: '<div class="earth-container"> <div class';
+  }
+  56% {
+    content: '<div class="eart';
+  }
+  57% {
+    content: "";
+  }
+}
+
+@keyframes eighth-code {
+  1% {
+    content: ".v";
+  }
+  2% {
+    content: ".ve";
+  }
+  3% {
+    content: ".ven";
+  }
+  4% {
+    content: ".venu";
+  }
+  5% {
+    content: ".venus";
+  }
+  6% {
+    content: ".venus-";
+  }
+  7% {
+    content: ".venus-";
+  }
+  8% {
+    content: ".venus-c";
+  }
+  9% {
+    content: ".venus-co";
+  }
+  10% {
+    content: ".venus-con";
+  }
+  11% {
+    content: ".venus-cont";
+  }
+  12% {
+    content: ".venus-conta";
+  }
+  13% {
+    content: ".venus-contai";
+  }
+  14% {
+    content: ".venus-contain";
+  }
+  15% {
+    content: ".venus-containe";
+  }
+  16% {
+    content: ".venus-container";
+  }
+  17% {
+    content: ".venus-container{";
+  }
+  18% {
+    content: ".venus-container{ a";
+  }
+  19% {
+    content: ".venus-container{ an";
+  }
+  20% {
+    content: ".venus-container{ ani";
+  }
+  21% {
+    content: ".venus-container{ anim";
+  }
+  22% {
+    content: ".venus-container{ anima";
+  }
+  23% {
+    content: ".venus-container{ animat";
+  }
+  24% {
+    content: ".venus-container{ animati";
+  }
+  25% {
+    content: ".venus-container{ animatio";
+  }
+  26% {
+    content: ".venus-container{ animation";
+  }
+  27% {
+    content: ".venus-container{ animation:";
+  }
+  28% {
+    content: ".venus-container{ animation: o";
+  }
+  29% {
+    content: ".venus-container{ animation: or";
+  }
+  30% {
+    content: ".venus-container{ animation: orb";
+  }
+  31% {
+    content: ".venus-container{ animation: orbi";
+  }
+  32% {
+    content: ".venus-container{ animation: orbit";
+  }
+  33% {
+    content: ".venus-container{ animation: orbit 20";
+  }
+  34% {
+    content: ".venus-container{ animation: orbit 20s";
+  }
+  35% {
+    content: ".venus-container{ animation: orbit 20s 0";
+  }
+  36% {
+    content: ".venus-container{ animation: orbit 20s 0s";
+  }
+  37% {
+    content: ".venus-container{ animation: orbit 20s 0s l";
+  }
+  38% {
+    content: ".venus-container{ animation: orbit 20s 0s li";
+  }
+  39% {
+    content: ".venus-container{ animation: orbit 20s 0s lin";
+  }
+  40% {
+    content: ".venus-container{ animation: orbit 20s 0s line";
+  }
+  41% {
+    content: ".venus-container{ animation: orbit 20s 0s linea";
+  }
+  42% {
+    content: ".venus-container{ animation: orbit 20s 0s linear";
+  }
+  43% {
+    content: ".venus-container{ animation: orbit 20s 0s linear i";
+  }
+  44% {
+    content: ".venus-container{ animation: orbit 20s 0s linear in";
+  }
+  45% {
+    content: ".venus-container{ animation: orbit 20s 0s linear inf";
+  }
+  46% {
+    content: ".venus-container{ animation: orbit 20s 0s linear infi";
+  }
+  47% {
+    content: ".venus-container{ animation: orbit 20s 0s linear infin";
+  }
+  48% {
+    content: ".venus-container{ animation: orbit 20s 0s linear infini";
+  }
+  49% {
+    content: ".venus-container{ animation: orbit 20s 0s linear infinit";
+  }
+  50% {
+    content: ".venus-container{ animation: orbit 20s 0s linear infinite";
+  }
+  51% {
+    content: ".venus-container{ animation: orbit 20s 0s linear infinite;";
+  }
+  52% {
+    content: ".venus-container{ animation: orbit 20s 0s linear infinite; }";
+  }
+  57% {
+    content: ".venus-container{ animation: orbit 20s 0s linear infinite; }";
+  }
+  58% {
+    content: ".venus-container{ animation: orbit 20s 0s l";
+  }
+  59% {
+    content: ".venus-container{ a";
+  }
+  60% {
+    content: ".ve";
+  }
+  62% {
+    content: "";
+  }
+}
+
+@keyframes seventh-code {
+  0% {
+    content: "";
+  }
+  1% {
+    content: "<d";
+  }
+  2% {
+    content: "<di";
+  }
+  3% {
+    content: "<div";
+  }
+  4% {
+    content: "<div c";
+  }
+  5% {
+    content: "<div cl";
+  }
+  6% {
+    content: "<div cla";
+  }
+  7% {
+    content: "<div clas";
+  }
+  8% {
+    content: "<div class";
+  }
+  9% {
+    content: "<div class=";
+  }
+  10% {
+    content: '<div class="';
+  }
+  11% {
+    content: '<div class="v';
+  }
+  12% {
+    content: '<div class="ve';
+  }
+  13% {
+    content: '<div class="ven';
+  }
+  14% {
+    content: '<div class="venu';
+  }
+  15% {
+    content: '<div class="venus';
+  }
+  16% {
+    content: '<div class="venus-';
+  }
+  17% {
+    content: '<div class="venus-';
+  }
+  18% {
+    content: '<div class="venus-c';
+  }
+  19% {
+    content: '<div class="venus-co';
+  }
+  20% {
+    content: '<div class="venus-con';
+  }
+  21% {
+    content: '<div class="venus-cont';
+  }
+  22% {
+    content: '<div class="venus-conta';
+  }
+  23% {
+    content: '<div class="venus-contai';
+  }
+  24% {
+    content: '<div class="venus-contain';
+  }
+  25% {
+    content: '<div class="venus-containe';
+  }
+  26% {
+    content: '<div class="venus-container';
+  }
+  27% {
+    content: '<div class="venus-container"';
+  }
+  28% {
+    content: '<div class="venus-container">';
+  }
+  29% {
+    content: '<div class="venus-container"> .';
+  }
+  30% {
+    content: '<div class="venus-container"> .v';
+  }
+  31% {
+    content: '<div class="venus-container"> .ve';
+  }
+  32% {
+    content: '<div class="venus-container"> .ven';
+  }
+  33% {
+    content: '<div class="venus-container"> .venu';
+  }
+  34% {
+    content: '<div class="venus-container"> .venus';
+  }
+  35% {
+    content: '<div class="venus-container"> .venus';
+  }
+  36% {
+    content: '<div class="venus-container"> .venus';
+  }
+  37% {
+    content: '<div class="venus-container"> <div class="venus"></div>"';
+  }
+  38% {
+    content: '<div class="venus-container"> <div class="venus"></div>"';
+  }
+  39% {
+    content: '<div class="venus-container"> <div class="venus"></div> <"';
+  }
+  40% {
+    content: '<div class="venus-container"> <div class="venus"></div> </"';
+  }
+  41% {
+    content: '<div class="venus-container"> <div class="venus"></div> </d"';
+  }
+  42% {
+    content: '<div class="venus-container"> <div class="venus"></div> </di"';
+  }
+  43% {
+    content: '<div class="venus-container"> <div class="venus"></div> </div"';
+  }
+  44% {
+    content: '<div class="venus-container"> <div class="venus"></div> </div>"';
+  }
+  54% {
+    content: '<div class="venus-container"> <div class="venus"></div> </div>"';
+  }
+  55% {
+    content: '<div class="venus-container"> <div class';
+  }
+  56% {
+    content: '<div class="ven';
+  }
+  57% {
+    content: "";
+  }
+}
+
+@keyframes sixth-code {
+  0% {
+    content: ".m";
+  }
+  1% {
+    content: ".me";
+  }
+  2% {
+    content: ".mer";
+  }
+  3% {
+    content: ".merc";
+  }
+  4% {
+    content: ".mercu";
+  }
+  5% {
+    content: ".mercur";
+  }
+  6% {
+    content: ".mercury";
+  }
+  7% {
+    content: ".mercury-";
+  }
+  8% {
+    content: ".mercury-";
+  }
+  9% {
+    content: ".mercury-c";
+  }
+  10% {
+    content: ".mercury-co";
+  }
+  11% {
+    content: ".mercury-con";
+  }
+  12% {
+    content: ".mercury-cont";
+  }
+  13% {
+    content: ".mercury-conta";
+  }
+  14% {
+    content: ".mercury-contai";
+  }
+  15% {
+    content: ".mercury-contain";
+  }
+  16% {
+    content: ".mercury-containe";
+  }
+  17% {
+    content: ".mercury-container";
+  }
+  18% {
+    content: ".mercury-container{";
+  }
+  19% {
+    content: ".mercury-container{ a";
+  }
+  20% {
+    content: ".mercury-container{ an";
+  }
+  21% {
+    content: ".mercury-container{ ani";
+  }
+  22% {
+    content: ".mercury-container{ anim";
+  }
+  23% {
+    content: ".mercury-container{ anima";
+  }
+  24% {
+    content: ".mercury-container{ animat";
+  }
+  25% {
+    content: ".mercury-container{ animati";
+  }
+  26% {
+    content: ".mercury-container{ animatio";
+  }
+  27% {
+    content: ".mercury-container{ animation";
+  }
+  28% {
+    content: ".mercury-container{ animation:";
+  }
+  29% {
+    content: ".mercury-container{ animation: o";
+  }
+  30% {
+    content: ".mercury-container{ animation: or";
+  }
+  31% {
+    content: ".mercury-container{ animation: orb";
+  }
+  32% {
+    content: ".mercury-container{ animation: orbi";
+  }
+  33% {
+    content: ".mercury-container{ animation: orbit";
+  }
+  34% {
+    content: ".mercury-container{ animation: orbit 10";
+  }
+  35% {
+    content: ".mercury-container{ animation: orbit 10s";
+  }
+  36% {
+    content: ".mercury-container{ animation: orbit 10s 0";
+  }
+  37% {
+    content: ".mercury-container{ animation: orbit 10s 0s";
+  }
+  38% {
+    content: ".mercury-container{ animation: orbit 10s 0s l";
+  }
+  39% {
+    content: ".mercury-container{ animation: orbit 10s 0s li";
+  }
+  40% {
+    content: ".mercury-container{ animation: orbit 10s 0s lin";
+  }
+  41% {
+    content: ".mercury-container{ animation: orbit 10s 0s line";
+  }
+  42% {
+    content: ".mercury-container{ animation: orbit 10s 0s linea";
+  }
+  43% {
+    content: ".mercury-container{ animation: orbit 10s 0s linear";
+  }
+  44% {
+    content: ".mercury-container{ animation: orbit 10s 0s linear i";
+  }
+  45% {
+    content: ".mercury-container{ animation: orbit 10s 0s linear in";
+  }
+  46% {
+    content: ".mercury-container{ animation: orbit 10s 0s linear inf";
+  }
+  47% {
+    content: ".mercury-container{ animation: orbit 10s 0s linear infi";
+  }
+  48% {
+    content: ".mercury-container{ animation: orbit 10s 0s linear infin";
+  }
+  49% {
+    content: ".mercury-container{ animation: orbit 10s 0s linear infini";
+  }
+  50% {
+    content: ".mercury-container{ animation: orbit 10s 0s linear infinit";
+  }
+  51% {
+    content: ".mercury-container{ animation: orbit 10s 0s linear infinite";
+  }
+  52% {
+    content: ".mercury-container{ animation: orbit 10s 0s linear infinite;";
+  }
+  53% {
+    content: ".mercury-container{ animation: orbit 10s 0s linear infinite; }";
+  }
+  58% {
+    content: ".mercury-container{ animation: orbit 10s 0s linear infinite; }";
+  }
+  59% {
+    content: ".mercury-container{ animation: orbit 10s 0s l";
+  }
+  60% {
+    content: ".mercury-container{ a";
+  }
+  61% {
+    content: ".me";
+  }
+  62% {
+    content: "";
+  }
+}
+
+@keyframes fifth-code {
+  0% {
+    content: "@";
+  }
+  1% {
+    content: "@k";
+  }
+  2% {
+    content: "@ke";
+  }
+  3% {
+    content: "@key";
+  }
+  4% {
+    content: "@keyf";
+  }
+  5% {
+    content: "@keyfr";
+  }
+  6% {
+    content: "@keyfra";
+  }
+  7% {
+    content: "@keyfram";
+  }
+  8% {
+    content: "@keyframe";
+  }
+  9% {
+    content: "@keyframes";
+  }
+  10% {
+    content: "@keyframes o";
+  }
+  11% {
+    content: "@keyframes or";
+  }
+  12% {
+    content: "@keyframes orb";
+  }
+  13% {
+    content: "@keyframes orbi";
+  }
+  14% {
+    content: "@keyframes orbit";
+  }
+  15% {
+    content: "@keyframes orbit {";
+  }
+  16% {
+    content: "@keyframes orbit { f";
+  }
+  17% {
+    content: "@keyframes orbit { fr";
+  }
+  19% {
+    content: "@keyframes orbit { fro";
+  }
+  20% {
+    content: "@keyframes orbit { from";
+  }
+  21% {
+    content: "@keyframes orbit { from{";
+  }
+  22% {
+    content: "@keyframes orbit { from{ t";
+  }
+  23% {
+    content: "@keyframes orbit { from{ tr";
+  }
+  24% {
+    content: "@keyframes orbit { from{ tra";
+  }
+  25% {
+    content: "@keyframes orbit { from{ tran";
+  }
+  26% {
+    content: "@keyframes orbit { from{ trans";
+  }
+  27% {
+    content: "@keyframes orbit { from{ transf";
+  }
+  28% {
+    content: "@keyframes orbit { from{ transfo";
+  }
+  29% {
+    content: "@keyframes orbit { from{ transfor";
+  }
+  30% {
+    content: "@keyframes orbit { from{ transform";
+  }
+  31% {
+    content: "@keyframes orbit { from{ transform:";
+  }
+  32% {
+    content: "@keyframes orbit { from{ transform: r";
+  }
+  33% {
+    content: "@keyframes orbit { from{ transform: ro";
+  }
+  34% {
+    content: "@keyframes orbit { from{ transform: rot";
+  }
+  35% {
+    content: "@keyframes orbit { from{ transform: rota";
+  }
+  36% {
+    content: "@keyframes orbit { from{ transform: rotat";
+  }
+  37% {
+    content: "@keyframes orbit { from{ transform: rotate";
+  }
+  38% {
+    content: "@keyframes orbit { from{ transform: rotate(";
+  }
+  39% {
+    content: "@keyframes orbit { from{ transform: rotate(0";
+  }
+  40% {
+    content: "@keyframes orbit { from{ transform: rotate(0d";
+  }
+  41% {
+    content: "@keyframes orbit { from{ transform: rotate(0de";
+  }
+  42% {
+    content: "@keyframes orbit { from{ transform: rotate(0deg";
+  }
+  43% {
+    content: "@keyframes orbit { from{ transform: rotate(0deg)";
+  }
+  43% {
+    content: "@keyframes orbit { from{ transform: rotate(0deg);";
+  }
+  44% {
+    content: "@keyframes orbit { from{ transform: rotate(0deg); }";
+  }
+  45% {
+    content: "@keyframes orbit { from{ transform: rotate(0deg); } }";
+  }
+  46% {
+    content: "@keyframes orbit { from{ transform: rotate(0deg); } } t";
+  }
+  47% {
+    content: "@keyframes orbit { from{ transform: rotate(0deg); } } to";
+  }
+  48% {
+    content: "@keyframes orbit { from{ transform: rotate(0deg); } } to{";
+  }
+  49% {
+    content: "@keyframes orbit { from{ transform: rotate(0deg); } } to{ t";
+  }
+  50% {
+    content: "@keyframes orbit { from{ transform: rotate(0deg); } } to{ tr";
+  }
+  51% {
+    content: "@keyframes orbit { from{ transform: rotate(0deg); } } to{ tra";
+  }
+  52% {
+    content: "@keyframes orbit { from{ transform: rotate(0deg); } } to{ tran";
+  }
+  53% {
+    content: "@keyframes orbit { from{ transform: rotate(0deg); } } to{ trans";
+  }
+  54% {
+    content: "@keyframes orbit { from{ transform: rotate(0deg); } } to{ transf";
+  }
+  55% {
+    content: "@keyframes orbit { from{ transform: rotate(0deg); } } to{ transfo";
+  }
+  56% {
+    content: "@keyframes orbit { from{ transform: rotate(0deg); } } to{ transfor";
+  }
+  57% {
+    content: "@keyframes orbit { from{ transform: rotate(0deg); } } to{ transform";
+  }
+  58% {
+    content: "@keyframes orbit { from{ transform: rotate(0deg); } } to{ transform:";
+  }
+  59% {
+    content: "@keyframes orbit { from{ transform: rotate(0deg); } } to{ transform: r";
+  }
+  60% {
+    content: "@keyframes orbit { from{ transform: rotate(0deg); } } to{ transform: ro";
+  }
+  61% {
+    content: "@keyframes orbit { from{ transform: rotate(0deg); } } to{ transform: rot";
+  }
+  62% {
+    content: "@keyframes orbit { from{ transform: rotate(0deg); } } to{ transform: rota";
+  }
+  63% {
+    content: "@keyframes orbit { from{ transform: rotate(0deg); } } to{ transform: rotat";
+  }
+  64% {
+    content: "@keyframes orbit { from{ transform: rotate(0deg); } } to{ transform: rotate";
+  }
+  65% {
+    content: "@keyframes orbit { from{ transform: rotate(0deg); } } to{ transform: rotate(";
+  }
+  66% {
+    content: "@keyframes orbit { from{ transform: rotate(0deg); } } to{ transform: rotate(3";
+  }
+  67% {
+    content: "@keyframes orbit { from{ transform: rotate(0deg); } } to{ transform: rotate(36";
+  }
+  68% {
+    content: "@keyframes orbit { from{ transform: rotate(0deg); } } to{ transform: rotate(360";
+  }
+  69% {
+    content: "@keyframes orbit { from{ transform: rotate(0deg); } } to{ transform: rotate(360d";
+  }
+  70% {
+    content: "@keyframes orbit { from{ transform: rotate(0deg); } } to{ transform: rotate(360de";
+  }
+  71% {
+    content: "@keyframes orbit { from{ transform: rotate(0deg); } } to{ transform: rotate(360deg";
+  }
+  72% {
+    content: "@keyframes orbit { from{ transform: rotate(0deg); } } to{ transform: rotate(360deg)";
+  }
+  73% {
+    content: "@keyframes orbit { from{ transform: rotate(0deg); } } to{ transform: rotate(360deg);";
+  }
+  74% {
+    content: "@keyframes orbit { from{ transform: rotate(0deg); } } to{ transform: rotate(360deg); }";
+  }
+  75% {
+    content: "@keyframes orbit { from{ transform: rotate(0deg); } } to{ transform: rotate(360deg); } }";
+  }
+  80% {
+    content: "@keyframes orbit { from{ transform: rotate(0deg); } } to{ transform: rotate(360deg); } }";
+  }
+  81% {
+    content: "@keyframes orbit { from{ transform: rotate(0deg); } } to{ transf";
+  }
+  82% {
+    content: "@keyframes orbit { from{ transform: r";
+  }
+  83% {
+    content: "@kefram";
+  }
+  84% {
+    content: "";
+  }
+}
+
+@keyframes fourth-code {
+  0% {
+    content: "";
+  }
+  1% {
+    content: "<d";
+  }
+  2% {
+    content: "<di";
+  }
+  3% {
+    content: "<div";
+  }
+  4% {
+    content: "<div c";
+  }
+  5% {
+    content: "<div cl";
+  }
+  6% {
+    content: "<div cla";
+  }
+  7% {
+    content: "<div clas";
+  }
+  8% {
+    content: "<div class";
+  }
+  9% {
+    content: "<div class=";
+  }
+  10% {
+    content: '<div class="';
+  }
+  11% {
+    content: '<div class="m';
+  }
+  12% {
+    content: '<div class="me';
+  }
+  13% {
+    content: '<div class="mer';
+  }
+  14% {
+    content: '<div class="merc';
+  }
+  15% {
+    content: '<div class="mercu';
+  }
+  16% {
+    content: '<div class="mercur';
+  }
+  17% {
+    content: '<div class="mercury';
+  }
+  18% {
+    content: '<div class="mercury-';
+  }
+  19% {
+    content: '<div class="mercury-';
+  }
+  20% {
+    content: '<div class="mercury-c';
+  }
+  21% {
+    content: '<div class="mercury-co';
+  }
+  22% {
+    content: '<div class="mercury-con';
+  }
+  23% {
+    content: '<div class="mercury-cont';
+  }
+  24% {
+    content: '<div class="mercury-conta';
+  }
+  25% {
+    content: '<div class="mercury-contai';
+  }
+  26% {
+    content: '<div class="mercury-contain';
+  }
+  27% {
+    content: '<div class="mercury-containe';
+  }
+  28% {
+    content: '<div class="mercury-container';
+  }
+  29% {
+    content: '<div class="mercury-container"';
+  }
+  30% {
+    content: '<div class="mercury-container">';
+  }
+  31% {
+    content: '<div class="mercury-container"> .';
+  }
+  32% {
+    content: '<div class="mercury-container"> .m';
+  }
+  33% {
+    content: '<div class="mercury-container"> .me';
+  }
+  34% {
+    content: '<div class="mercury-container"> .mer';
+  }
+  35% {
+    content: '<div class="mercury-container"> .merc';
+  }
+  36% {
+    content: '<div class="mercury-container"> .mercu';
+  }
+  37% {
+    content: '<div class="mercury-container"> .mercur';
+  }
+  38% {
+    content: '<div class="mercury-container"> .mercury';
+  }
+  39% {
+    content: '<div class="mercury-container"> .mercury';
+  }
+  40% {
+    content: '<div class="mercury-container"> .mercury';
+  }
+  41% {
+    content: '<div class="mercury-container"> <div class="mercury></div>"';
+  }
+  42% {
+    content: '<div class="mercury-container"> <div class="mercury></div>"';
+  }
+  43% {
+    content: '<div class="mercury-container"> <div class="mercury></div> <"';
+  }
+  44% {
+    content: '<div class="mercury-container"> <div class="mercury></div> </"';
+  }
+  45% {
+    content: '<div class="mercury-container"> <div class="mercury></div> </d"';
+  }
+  46% {
+    content: '<div class="mercury-container"> <div class="mercury></div> </di"';
+  }
+  47% {
+    content: '<div class="mercury-container"> <div class="mercury></div> </div"';
+  }
+  48% {
+    content: '<div class="mercury-container"> <div class="mercury></div> </div>"';
+  }
+  54% {
+    content: '<div class="mercury-container"> <div class="mercury></div> </div>"';
+  }
+  55% {
+    content: '<div class="mercury-container"> <div class="';
+  }
+  56% {
+    content: '<div class="mercu';
+  }
+  57% {
+    content: "";
+  }
+}
+
+@keyframes mercury {
+  from {
+    width: 0px;
+    height: 0px;
+    background: #9f5f2600;
+  }
+  to {
+    width: 6px;
+    height: 6px;
+    background: #9f5e26;
+  }
+}
+
+@keyframes orbit {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes star-first {
+  from {
+    width: 0px;
+    height: 0px;
+    border-radius: 0px;
+    background: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0)
+    );
+    box-shadow: 0 0 10px 2px rgba(255, 107, 0, 0),
+      0 0 22px 11px rgba(255, 203, 0, 0);
+  }
+  to {
+    width: 1px;
+    height: 1px;
+    border-radius: 3px;
+    background: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0.65) 5%,
+      rgba(255, 255, 255, 0)
+    );
+    box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.16),
+      0 0 22px 3px rgba(255, 255, 255, 0.23);
+  }
+}
+
+@keyframes typing {
+  0% {
+    content: "B";
+  }
+  1% {
+    content: "Ba";
+  }
+  2% {
+    content: "Bac";
+  }
+  3% {
+    content: "Back";
+  }
+  4% {
+    content: "Backg";
+  }
+  5% {
+    content: "Backgr";
+  }
+  6% {
+    content: "Backgro";
+  }
+  7% {
+    content: "Backgrou";
+  }
+  8% {
+    content: "Backgroun";
+  }
+  9% {
+    content: "Background";
+  }
+  10% {
+    content: "Background:";
+  }
+  11% {
+    content: "Background: ";
+  }
+  12% {
+    content: "Background: r";
+  }
+  13% {
+    content: "Background: ra";
+  }
+  14% {
+    content: "Background: rad";
+  }
+  15% {
+    content: "Background: radi";
+  }
+  16% {
+    content: "Background: radia";
+  }
+  17% {
+    content: "Background: radial";
+  }
+  18% {
+    content: "Background: radial-";
+  }
+  19% {
+    content: "Background: radial-g";
+  }
+  20% {
+    content: "Background: radial-gr";
+  }
+  21% {
+    content: "Background: radial-gra";
+  }
+  22% {
+    content: "Background: radial-grad";
+  }
+  23% {
+    content: "Background: radial-gradi";
+  }
+  24% {
+    content: "Background: radial-gradie";
+  }
+  25% {
+    content: "Background: radial-gradien";
+  }
+  26% {
+    content: "Background: radial-gradient";
+  }
+  27% {
+    content: "Background: radial-gradient(";
+  }
+  28% {
+    content: "Background: radial-gradient(#";
+  }
+  29% {
+    content: "Background: radial-gradient(#0";
+  }
+  30% {
+    content: "Background: radial-gradient(#0a";
+  }
+  31% {
+    content: "Background: radial-gradient(#0a0";
+  }
+  32% {
+    content: "Background: radial-gradient(#0a04";
+  }
+  33% {
+    content: "Background: radial-gradient(#0a042";
+  }
+  34% {
+    content: "Background: radial-gradient(#0a0425";
+  }
+  35% {
+    content: "Background: radial-gradient(#0a0425,";
+  }
+  36% {
+    content: "Background: radial-gradient(#0a0425, ";
+  }
+  37% {
+    content: "Background: radial-gradient(#0a0425, #";
+  }
+  38% {
+    content: "Background: radial-gradient(#0a0425, #0";
+  }
+  38% {
+    content: "Background: radial-gradient(#0a0425, #00";
+  }
+  39% {
+    content: "Background: radial-gradient(#0a0425, #000";
+  }
+  40% {
+    content: "Background: radial-gradient(#0a0425, #000)";
+  }
+  41% {
+    content: "Background: radial-gradient(#0a0425, #000);";
+  }
+  51% {
+    content: "Background: radial-gradient(#0a0425, #000);";
+  }
+  52% {
+    content: "Background: radial-gradient(#0a042";
+  }
+  53% {
+    content: "Background: radial-gr";
+  }
+  54% {
+    content: "Backg";
+  }
+  55% {
+    content: "";
+  }
+}
+
+@keyframes typewriter-color {
+  from {
+    background-color: #000;
+  }
+  to {
+    background-color: $font-color;
+  }
+}
+
+@keyframes second-typing {
+  0% {
+    content: "f";
+  }
+  1% {
+    content: "fo";
+  }
+  2% {
+    content: "for";
+  }
+  3% {
+    content: "for (";
+  }
+  4% {
+    content: "for (l";
+  }
+  5% {
+    content: "for (le";
+  }
+  6% {
+    content: "for (let";
+  }
+  7% {
+    content: "for (let i";
+  }
+  8% {
+    content: "for (let i =";
+  }
+  9% {
+    content: "for (let i = 0";
+  }
+  10% {
+    content: "for (let i = 0;";
+  }
+  11% {
+    content: "for (let i = 0; i";
+  }
+  12% {
+    content: "for (let i = 0; i >";
+  }
+  13% {
+    content: "for (let i = 0; i > 8";
+  }
+  14% {
+    content: "for (let i = 0; i > 85";
+  }
+  15% {
+    content: "for (let i = 0; i > 85;";
+  }
+  16% {
+    content: "for (let i = 0; i > 85; i";
+  }
+  17% {
+    content: "for (let i = 0; i > 85; i+";
+  }
+  18% {
+    content: "for (let i = 0; i > 85; i++";
+  }
+  19% {
+    content: "for (let i = 0; i > 85; i++)";
+  }
+  20% {
+    content: "for (let i = 0; i > 85; i++) {";
+  }
+  21% {
+    content: "for (let i = 0; i > 85; i++) {d";
+  }
+  22% {
+    content: "for (let i = 0; i > 85; i++) {do";
+  }
+  23% {
+    content: "for (let i = 0; i > 85; i++) {doc";
+  }
+  24% {
+    content: "for (let i = 0; i > 85; i++) {docu";
+  }
+  25% {
+    content: "for (let i = 0; i > 85; i++) {docum";
+  }
+  26% {
+    content: "for (let i = 0; i > 85; i++) {docume";
+  }
+  27% {
+    content: "for (let i = 0; i > 85; i++) {documen";
+  }
+  28% {
+    content: "for (let i = 0; i > 85; i++) {document";
+  }
+  29% {
+    content: "for (let i = 0; i > 85; i++) {document.";
+  }
+  30% {
+    content: "for (let i = 0; i > 85; i++) {document.q";
+  }
+  31% {
+    content: "for (let i = 0; i > 85; i++) {document.qu";
+  }
+  32% {
+    content: "for (let i = 0; i > 85; i++) {document.que";
+  }
+  33% {
+    content: "for (let i = 0; i > 85; i++) {document.quer";
+  }
+  34% {
+    content: "for (let i = 0; i > 85; i++) {document.query";
+  }
+  35% {
+    content: "for (let i = 0; i > 85; i++) {document.queryS";
+  }
+  36% {
+    content: "for (let i = 0; i > 85; i++) {document.querySe";
+  }
+  37% {
+    content: "for (let i = 0; i > 85; i++) {document.querySel";
+  }
+  38% {
+    content: "for (let i = 0; i > 85; i++) {document.querySele";
+  }
+  39% {
+    content: "for (let i = 0; i > 85; i++) {document.querySelec";
+  }
+  40% {
+    content: "for (let i = 0; i > 85; i++) {document.querySelect";
+  }
+  41% {
+    content: "for (let i = 0; i > 85; i++) {document.querySelecto";
+  }
+  42% {
+    content: "for (let i = 0; i > 85; i++) {document.querySelector";
+  }
+  43% {
+    content: "for (let i = 0; i > 85; i++) {document.querySelector";
+  }
+  44% {
+    content: "for (let i = 0; i > 85; i++) {document.querySelector(";
+  }
+  45% {
+    content: "for (let i = 0; i > 85; i++) {document.querySelector('";
+  }
+  46% {
+    content: "for (let i = 0; i > 85; i++) {document.querySelector('sta";
+  }
+  47% {
+    content: "for (let i = 0; i > 85; i++) {document.querySelector('star')";
+  }
+  48% {
+    content: "for (let i = 0; i > 85; i++) {document.querySelector('star')";
+  }
+  49% {
+    content: "for (let i = 0; i > 85; i++) {document.querySelector('star').";
+  }
+  50% {
+    content: "for (let i = 0; i > 85; i++) {document.querySelector('star').a";
+  }
+  51% {
+    content: "for (let i = 0; i > 85; i++) {document.querySelector('star').ap";
+  }
+  52% {
+    content: "for (let i = 0; i > 85; i++) {document.querySelector('star').app";
+  }
+  53% {
+    content: "for (let i = 0; i > 85; i++) {document.querySelector('star').appe";
+  }
+  54% {
+    content: "for (let i = 0; i > 85; i++) {document.querySelector('star').appen";
+  }
+  55% {
+    content: "for (let i = 0; i > 85; i++) {document.querySelector('star').append";
+  }
+  56% {
+    content: "for (let i = 0; i > 85; i++) {document.querySelector('star').appendC";
+  }
+  57% {
+    content: "for (let i = 0; i > 85; i++) {document.querySelector('star').appendCh";
+  }
+  58% {
+    content: "for (let i = 0; i > 85; i++) {document.querySelector('star').appendChi";
+  }
+  59% {
+    content: "for (let i = 0; i > 85; i++) {document.querySelector('star').appendChil";
+  }
+  60% {
+    content: "for (let i = 0; i > 85; i++) {document.querySelector('star').appendChild";
+  }
+  61% {
+    content: "for (let i = 0; i > 85; i++) {document.querySelector('star').appendChild(";
+  }
+  62% {
+    content: "for (let i = 0; i > 85; i++) {document.querySelector('star').appendChild(d";
+  }
+  63% {
+    content: "for (let i = 0; i > 85; i++) {document.querySelector('star').appendChild(do";
+  }
+  64% {
+    content: "for (let i = 0; i > 85; i++) {document.querySelector('star').appendChild(doc";
+  }
+  65% {
+    content: "for (let i = 0; i > 85; i++) {document.querySelector('star').appendChild(docu";
+  }
+  66% {
+    content: "for (let i = 0; i > 85; i++) {document.querySelector('star').appendChild(docum";
+  }
+  67% {
+    content: "for (let i = 0; i > 85; i++) {document.querySelector('star').appendChild(docume";
+  }
+  68% {
+    content: "for (let i = 0; i > 85; i++) {document.querySelector('star').appendChild(documen";
+  }
+  69% {
+    content: "for (let i = 0; i > 85; i++) {document.querySelector('star').appendChild(document.";
+  }
+  70% {
+    content: "for (let i = 0; i > 85; i++) {document.querySelector('star').appendChild(document.c";
+  }
+  71% {
+    content: "for (let i = 0; i > 85; i++) {document.querySelector('star').appendChild(document.cr";
+  }
+  72% {
+    content: "for (let i = 0; i > 85; i++) {document.querySelector('star').appendChild(document.cre";
+  }
+  73% {
+    content: "for (let i = 0; i > 85; i++) {document.querySelector('star').appendChild(document.crea";
+  }
+  74% {
+    content: "for (let i = 0; i > 85; i++) {document.querySelector('star').appendChild(document.creat";
+  }
+  75% {
+    content: "for (let i = 0; i > 85; i++) {document.querySelector('star').appendChild(document.create";
+  }
+  76% {
+    content: "for (let i = 0; i > 85; i++) {document.querySelector('star').appendChild(document.createE";
+  }
+  77% {
+    content: "for (let i = 0; i > 85; i++) {document.querySelector('star').appendChild(document.createEl";
+  }
+  78% {
+    content: "for (let i = 0; i > 85; i++) {document.querySelector('star').appendChild(document.createEle";
+  }
+  79% {
+    content: "for (let i = 0; i > 85; i++) {document.querySelector('star').appendChild(document.createElem";
+  }
+  80% {
+    content: "for (let i = 0; i > 85; i++) {document.querySelector('star').appendChild(document.createEleme";
+  }
+  81% {
+    content: "for (let i = 0; i > 85; i++) {document.querySelector('star').appendChild(document.createElemen";
+  }
+  82% {
+    content: "for (let i = 0; i > 85; i++) {document.querySelector('star').appendChild(document.createElement";
+  }
+  83% {
+    content: "for (let i = 0; i > 85; i++) {document.querySelector('star').appendChild(document.createElement(";
+  }
+  84% {
+    content: "for (let i = 0; i > 85; i++) {document.querySelector('star').appendChild(document.createElement('";
+  }
+  85% {
+    content: "for (let i = 0; i > 85; i++) {document.querySelector('star').appendChild(document.createElement('d";
+  }
+  86% {
+    content: "for (let i = 0; i > 85; i++) {document.querySelector('star').appendChild(document.createElement('di";
+  }
+  87% {
+    content: "for (let i = 0; i > 85; i++) {document.querySelector('star').appendChild(document.createElement('div";
+  }
+  88% {
+    content: "for (let i = 0; i > 85; i++) {document.querySelector('star').appendChild(document.createElement('div'";
+  }
+  89% {
+    content: "for (let i = 0; i > 85; i++) {document.querySelector('star').appendChild(document.createElement('div')";
+  }
+  90% {
+    content: "for (let i = 0; i > 85; i++) {document.querySelector('star').appendChild(document.createElement('div'))";
+  }
+  91% {
+    content: "for (let i = 0; i > 85; i++) {document.querySelector('star').appendChild(document.createElement('div'));};";
+  }
+  96% {
+    content: "for (let i = 0; i > 85; i++) {document.querySelector('star').appendChild(document.createElement('div'));};";
+  }
+  97% {
+    content: "for (let i = 0; i > 85; i++) {document.querySelector('star').appendChild(documen";
+  }
+  98% {
+    content: "for (let i = 0; i > 85; i++) {document.querySelec";
+  }
+  99% {
+    content: "for (let i = 0; i > ";
+  }
+  100% {
+    content: "";
+  }
+}
+
+@keyframes bg-color {
+  from {
+    background-color: #fff;
+  }
+  to {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+  }
+}
+
+@keyframes tw-blink {
+  0% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes orbit-color {
+  from {
+    border: 0px rgba(255, 255, 255, 0) dashed;
+  }
+  to {
+    border: 1px rgba(255, 255, 255, 0.1) dashed;
+  }
+}
+
+.first-orbit {
+  position: absolute;
+  width: calc(50vh - 207px);
+  height: calc(50vh - 207px);
+  border: 2px rgba(255, 255, 255, 0) dashed;
+  border-radius: 100%;
+  animation: orbit-color 2s 50.5s linear forwards;
+}
+.second-orbit {
+  position: absolute;
+  width: calc(50vh - 90px);
+  height: calc(50vh - 90px);
+  border: 2px rgba(255, 255, 255, 0) dashed;
+  border-radius: 100%;
+  animation: orbit-color 2s 66.5s linear forwards;
+}
+.third-orbit {
+  position: absolute;
+  width: calc(50vh + 35px);
+  height: calc(50vh + 35px);
+  border: 2px rgba(255, 255, 255, 0) dashed;
+  border-radius: 100%;
+  animation: orbit-color 2s 82s linear forwards;
+}
+.fourth-orbit {
+  position: absolute;
+  width: calc(50vh + 167px);
+  height: calc(50vh + 167px);
+  border: 2px rgba(255, 255, 255, 0) dashed;
+  border-radius: 100%;
+  animation: orbit-color 2s 110.5s linear forwards;
+}
+
+.asteroids-belt {
+  right: -55px;
+  top: -475px;
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 100%;
+  transform-origin: calc(-65% + 2.5px) calc(170% - 1.5px);
+  animation: orbit 400s 0s linear infinite;
+}
+.asteroid {
+  position: absolute;
+  height: 3px;
+  width: 3px;
+  border-radius: 100%;
+  background-color: rgba(160, 160, 160, 0);
+  // animation: asteroid 1s 123.5s forwards;
+}
+
+@keyframes asteroid {
+  from {
+    background-color: rgba(160, 160, 160, 0);
+  }
+  to {
+    background-color: rgb(160, 160, 160);
+  }
+}
+
+@for $i from 0 to 251 {
+  .asteroid:nth-child(#{$i}) {
+    top: calc(#{random() * 80}* 1px + 50vh);
+    right: calc(#{random() * 80}* 1px + 50vw);
+    transform: rotate(random(359) * 1deg);
+    transform-origin: center 425px;
+    opacity: calc(#{random(4)}* 25%);
+    animation: asteroid 1.5s calc(#{$i * 0.025s} + 123.5s) forwards;
+  }
+}
+
+// FOOTER
+
+footer {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+  font-family: "Neonderthaw", helvetica;
+  position: absolute;
+  font-size: 3rem;
+  margin-top: 165vh;
+  margin-bottom: 10vh;
+  background-color: transparent;
+  .space {
+    width: 5px;
+    height: 4px;
+  }
+  p {
+    position: relative;
+    margin-bottom: 100px;
+    margin-top: 500px;
+    color: rgb(134, 143, 177);
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  p:nth-child(5) {
+    color: rgb(69, 69, 69);
+  }
+  p:nth-child(17) {
+    color: rgb(69, 69, 69);
+  }
+  p:nth-child(18) {
+    color: rgb(69, 69, 69);
+  }
+  p:nth-child(27) {
+    color: rgb(69, 69, 69);
+  }
+  p:nth-child(9) {
+    color: rgb(69, 69, 69);
+  }
+}
+p:not(
+    p:nth-child(5),
+    p:nth-child(9),
+    p:nth-child(27),
+    p:nth-child(18),
+    p:nth-child(17)
+  ):hover {
+  text-shadow: 0px 0px 40px rgb(168 185 255);
+  color: rgb(168 185 255);
+}
